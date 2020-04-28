@@ -24,14 +24,29 @@ let UsersService = class UsersService {
         const newUser = new this.userModel(user);
         return await newUser.save();
     }
+    async sleep(ms) {
+        return new Promise((resolve) => {
+            setTimeout(resolve, ms);
+        });
+    }
     async delete(id) {
         return await this.userModel.findByIdAndRemove(id);
     }
     async findOne(id) {
+        console.log('findOne:', id);
         return await this.userModel.findOne({ _id: id });
     }
     async findUser(username) {
         return await this.userModel.findOne({ username: username });
+    }
+    async findUserProfile(username) {
+        let resp = await this.findUser(username);
+        return {
+            id: resp['id'],
+            username: resp['username'],
+            name: resp['name'],
+            admin: resp['admin'],
+        };
     }
     async badLogin(id, login_fail) {
         const fails = (login_fail) ? login_fail + 1 : 1;

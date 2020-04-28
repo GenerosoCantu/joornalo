@@ -10,10 +10,15 @@ exports.UserSchema = new mongoose.Schema({
         default: () => uuid_1.v4()
     },
     username: String,
+    name: String,
     password: String,
     reg_time: {
         type: Date,
         default: Date.now
+    },
+    admin: {
+        type: Boolean,
+        default: false
     },
     permissions: [String],
     login_fail: Number,

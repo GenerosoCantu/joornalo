@@ -27,7 +27,7 @@ let UsersController = class UsersController {
         return this.usersService.delete(id);
     }
     getProfile(req) {
-        return req.user;
+        return this.usersService.findUserProfile(req.user.username);
     }
     update(permissionsDto, id) {
         return this.usersService.updatePermissions(id, permissionsDto);
@@ -35,6 +35,7 @@ let UsersController = class UsersController {
 };
 __decorate([
     common_1.Post(),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [user_dto_1.UserDto]),

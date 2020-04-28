@@ -9,10 +9,15 @@ export const UserSchema = new mongoose.Schema({
     default: () => uuid()
   },
   username: String,
+  name: String,
   password: String,
   reg_time: {
     type: Date,
     default: Date.now
+  },
+  admin: {
+    type: Boolean,
+    default: false
   },
   permissions: [String],
   login_fail: Number,

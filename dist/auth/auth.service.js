@@ -16,6 +16,7 @@ let AuthService = class AuthService {
     constructor(usersService, jwtService) {
         this.usersService = usersService;
         this.jwtService = jwtService;
+        this.sessions = {};
     }
     async validateUser(username, pass) {
         let user = await this.usersService.findUser(username);
@@ -35,9 +36,23 @@ let AuthService = class AuthService {
     }
     async login(user) {
         const payload = { username: user.username, sub: user['_id'] };
+        let token = this.jwtService.sign(payload);
+        this.sessions[user.username] = token;
+        console.log('---------------------------------');
+        console.log(this.sessions);
         return {
-            access_token: this.jwtService.sign(payload),
+            access_token: token,
         };
+    }
+    async validateSession(token) {
+        console.log('validateSession-----------------------');
+        for (let [username, validToken] of Object.entries(this.sessions)) {
+            console.log(`${username}: ${validToken}`);
+            if (validToken == token) {
+                return true;
+            }
+            return false;
+        }
     }
 };
 AuthService = __decorate([

@@ -4,6 +4,8 @@ import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class AuthService {
+  private sessions = {};
+
   constructor(
     private readonly usersService: UsersService,
     private readonly jwtService: JwtService
@@ -29,8 +31,24 @@ export class AuthService {
 
   async login(user: any) {
     const payload = { username: user.username, sub: user['_id'] };
+    let token = this.jwtService.sign(payload);
+    this.sessions[user.username] = token;
+    console.log('---------------------------------');
+    console.log(this.sessions);
     return {
-      access_token: this.jwtService.sign(payload),
+      access_token: token,
     };
+  }
+
+  async validateSession(token: any) {
+    console.log('validateSession-----------------------');
+    for (let [username, validToken] of Object.entries(this.sessions)) {
+      console.log(`${username}: ${validToken}`);
+      if (validToken == token) {
+        return true;
+      }
+      return false;
+    }
+    //return (this.sessions[username] = token);
   }
 }

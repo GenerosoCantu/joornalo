@@ -24,6 +24,18 @@ __decorate([
     class_validator_1.IsNotEmpty(),
     swagger_1.ApiModelProperty(),
     __metadata("design:type", String)
+], UserDto.prototype, "name", void 0);
+__decorate([
+    class_validator_1.IsBoolean(),
+    class_validator_1.IsNotEmpty(),
+    swagger_1.ApiModelProperty(),
+    __metadata("design:type", Boolean)
+], UserDto.prototype, "admin", void 0);
+__decorate([
+    class_validator_1.IsString(),
+    class_validator_1.IsNotEmpty(),
+    swagger_1.ApiModelProperty(),
+    __metadata("design:type", String)
 ], UserDto.prototype, "password", void 0);
 __decorate([
     swagger_1.ApiModelProperty(),

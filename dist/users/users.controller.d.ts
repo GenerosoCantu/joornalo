@@ -6,6 +6,6 @@ export declare class UsersController {
     constructor(usersService: UsersService);
     create(userDto: UserDto): Promise<User>;
     delete(id: any): Promise<User>;
-    getProfile(req: any): any;
+    getProfile(req: any): Promise<any>;
     update(permissionsDto: PermissionsDto, id: any): Promise<User>;
 }

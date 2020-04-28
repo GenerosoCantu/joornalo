@@ -5,13 +5,18 @@ import { User, Permissions } from './interfaces/user.interface'
 
 @Injectable()
 export class UsersService {
-  private readonly users: User[];
-
   constructor(@InjectModel('User') private readonly userModel: Model<User>) { }
 
   async create(user: User): Promise<User> {
+    //await this.sleep(3000);
     const newUser = new this.userModel(user);
     return await newUser.save();
+  }
+
+  async sleep(ms) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
   }
 
   async delete(id: string): Promise<User> {
@@ -19,11 +24,23 @@ export class UsersService {
   }
 
   async findOne(id: string): Promise<User> {
+    console.log('findOne:', id);
     return await this.userModel.findOne({ _id: id });
   }
 
   async findUser(username: string): Promise<User> {
     return await this.userModel.findOne({ username: username });
+  }
+
+
+  async findUserProfile(username: string): Promise<any> {
+    let resp = await this.findUser(username);
+    return {
+      id: resp['id'],
+      username: resp['username'],
+      name: resp['name'],
+      admin: resp['admin'],
+    }
   }
 
   async badLogin(id: string, login_fail: number): Promise<User> {
@@ -35,5 +52,7 @@ export class UsersService {
   async updatePermissions(id: string, permissions: Permissions): Promise<User> {
     return await this.userModel.findByIdAndUpdate(id, permissions);
   }
+
+
 
 }

@@ -1,11 +1,21 @@
 import { ApiModelProperty } from '@nestjs/swagger';
-import { IsString, IsInt, IsNotEmpty } from 'class-validator';
+import { IsString, IsInt, IsNotEmpty, IsBoolean } from 'class-validator';
 
 export class UserDto {
   @IsString()
   @IsNotEmpty()
   @ApiModelProperty()
   readonly username: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @ApiModelProperty()
+  readonly name: string;
+
+  @IsBoolean()
+  @IsNotEmpty()
+  @ApiModelProperty()
+  readonly admin: boolean;
 
   @IsString()
   @IsNotEmpty()
