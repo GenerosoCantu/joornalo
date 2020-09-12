@@ -27,7 +27,16 @@ let UsersController = class UsersController {
         return this.usersService.delete(id);
     }
     getProfile(req) {
-        return this.usersService.findUserProfile(req.user.username);
+        return this.usersService.findUserProfile(req.user.email);
+    }
+    findAll() {
+        return this.usersService.findAll();
+    }
+    getUser(id) {
+        return this.usersService.findOne(id);
+    }
+    updateUser(updateUserDto, id) {
+        return this.usersService.update(id, updateUserDto);
     }
     update(permissionsDto, id) {
         return this.usersService.updatePermissions(id, permissionsDto);
@@ -57,6 +66,29 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], UsersController.prototype, "getProfile", null);
 __decorate([
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    common_1.Get(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], UsersController.prototype, "findAll", null);
+__decorate([
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    common_1.Get('/:id'),
+    __param(0, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], UsersController.prototype, "getUser", null);
+__decorate([
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    common_1.Patch('/:id'),
+    __param(0, common_1.Body()), __param(1, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [user_dto_1.UserDto, Object]),
+    __metadata("design:returntype", Promise)
+], UsersController.prototype, "updateUser", null);
+__decorate([
     common_1.Put('permissions/:id'),
     __param(0, common_1.Body()), __param(1, common_1.Param('id')),
     __metadata("design:type", Function),
@@ -64,7 +96,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], UsersController.prototype, "update", null);
 UsersController = __decorate([
-    common_1.Controller('user'),
+    common_1.Controller('users'),
     __metadata("design:paramtypes", [users_service_1.UsersService])
 ], UsersController);
 exports.UsersController = UsersController;

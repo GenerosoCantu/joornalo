@@ -2,15 +2,26 @@ import { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { User, Permissions } from './interfaces/user.interface'
+import { AuthService } from '../auth/auth.service';
 
 @Injectable()
 export class UsersService {
   constructor(@InjectModel('User') private readonly userModel: Model<User>) { }
 
+  async findAll(): Promise<User[]> {
+    return await this.userModel.find();
+  }
+
   async create(user: User): Promise<User> {
     //await this.sleep(3000);
     const newUser = new this.userModel(user);
     return await newUser.save();
+  }
+
+  async update(id: string, user: User): Promise<User> {
+    console.log('user----------------------');
+    console.log(user);
+    return await this.userModel.findByIdAndUpdate(id, user, { new: true });
   }
 
   async sleep(ms) {
@@ -28,18 +39,15 @@ export class UsersService {
     return await this.userModel.findOne({ _id: id });
   }
 
-  async findUser(username: string): Promise<User> {
-    return await this.userModel.findOne({ username: username });
+  async findUser(email: string): Promise<User> {
+    return await this.userModel.findOne({ email: email });
   }
 
 
-  async findUserProfile(username: string): Promise<any> {
-    let resp = await this.findUser(username);
+  async findUserProfile(email: string): Promise<any> {
+    let user = await this.findUser(email);
     return {
-      id: resp['id'],
-      username: resp['username'],
-      name: resp['name'],
-      admin: resp['admin'],
+      user
     }
   }
 

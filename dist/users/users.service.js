@@ -20,9 +20,17 @@ let UsersService = class UsersService {
     constructor(userModel) {
         this.userModel = userModel;
     }
+    async findAll() {
+        return await this.userModel.find();
+    }
     async create(user) {
         const newUser = new this.userModel(user);
         return await newUser.save();
+    }
+    async update(id, user) {
+        console.log('user----------------------');
+        console.log(user);
+        return await this.userModel.findByIdAndUpdate(id, user, { new: true });
     }
     async sleep(ms) {
         return new Promise((resolve) => {
@@ -36,16 +44,13 @@ let UsersService = class UsersService {
         console.log('findOne:', id);
         return await this.userModel.findOne({ _id: id });
     }
-    async findUser(username) {
-        return await this.userModel.findOne({ username: username });
+    async findUser(email) {
+        return await this.userModel.findOne({ email: email });
     }
-    async findUserProfile(username) {
-        let resp = await this.findUser(username);
+    async findUserProfile(email) {
+        let user = await this.findUser(email);
         return {
-            id: resp['id'],
-            username: resp['username'],
-            name: resp['name'],
-            admin: resp['admin'],
+            user
         };
     }
     async badLogin(id, login_fail) {

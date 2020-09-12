@@ -1978,12 +1978,12 @@
         "signature": "fc7cc18a8e5feb041bb7ba0e24175c89f34c30177a7266e5848e7c4017fac034"
       },
       "../src/users/interfaces/user.interface.ts": {
-        "version": "8ea9218824291bbb65574a70d18ea011e8f5fbb3447ecafe8354146810694107",
-        "signature": "27c6853fb4b1c9a41a8206bfe9d6fe5d8fa69b5998656bfdc5cad3d8d6346a93"
+        "version": "097fc3dae6d7fe2e5174084ce144258e6d1b8d2ff30c47f3c804e05c45c03ebe",
+        "signature": "10523c3cbc0ad4ba056c3e25f0f137c61a0a0a1cf3e252484c56226506cc33c0"
       },
       "../src/users/users.service.ts": {
-        "version": "9b7b74721dd29a9229c7eda33add98b9d421f3f9d130a407d0db33e88ec156dd",
-        "signature": "32d2519d601d74c49850621190f62256c7e75dc4bc6676d7697722f1a3a2a292"
+        "version": "e0cf33134bbaf14b7c0ae6b6b7975b2b06f82a77df6edfe9e0b9ac09d832327d",
+        "signature": "4931246e6a5d4d4ee2db2cbbbbc35518eef8573148ef0c91fe8112492ebeb064"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
         "version": "3ee1c4479498ce568cf7789174c181a68a7f7f16f7b338132ded0daf24a8a971",
@@ -2014,8 +2014,8 @@
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
       "../src/auth/auth.service.ts": {
-        "version": "6f287d670aa0fc7d2e1b2cba7b7f0f80a8c0b27af4328bbdaa6039f6a917989f",
-        "signature": "4cbff79f594c599cbb2551bf71544e1b56f5f15d6644e9e4bfd2d172c05baf24"
+        "version": "8df658ba2068ca088918610e85e685d3e0558f1ffde4faf1c2e8b87dd1b5ee97",
+        "signature": "c01c301e07651eff2ea5001f70304bb50ff0fdcbf1689c86a7799d4491f8e6dd"
       },
       "../node_modules/@types/range-parser/index.d.ts": {
         "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
@@ -2098,8 +2098,8 @@
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
       "../src/auth/local.strategy.ts": {
-        "version": "58f331f70e71803d11f460276c3139b5138ff48644d0d73d5155eae94cbf81c1",
-        "signature": "4d65c1cf2c61e430987e82fb595ba2d45d5bc5d29c05ee7ab57c081f60e1a875"
+        "version": "2c280fe443b8eb4558e093c895981504046f198c9eb2cb4d4ac88e11bfd0ba83",
+        "signature": "c882f6cb2cfb1ddd7efe23f2cb523bc54da9571ec9cd2d56ff3273a168ea4b98"
       },
       "../node_modules/@types/passport-jwt/index.d.ts": {
         "version": "d306be26f96b4bd9b279cd7da9d1355d5ce4060a2bb254489c1b95c87057eb38",
@@ -2110,19 +2110,19 @@
         "signature": "24fa20d394d1fe3d519e1c29521c1879d7c06370bce8d59702ef6fef31cea97f"
       },
       "../src/auth/jwt.strategy.ts": {
-        "version": "8fca73b1f6ef1f6f2e2ca1352a08e6f86896be149084c919352eb1fd14f344a7",
-        "signature": "4492eb152ce552973e2061e53c83344577652e7daaa0748d318c518c6d869ab9"
+        "version": "4246d903923a92b3b7fa4a1df2c4f2e4c2b4594b76136f9b53df2176e1273557",
+        "signature": "413f220b1fe4553f4d3f7b938fc0cb4b10955d72f3792d60fcecc0efee5718c0"
       },
       "../src/users/dto/user.dto.ts": {
-        "version": "92002eba71d958d3a5dd3f5b39f2d98acf9217263af053e34afac19b6bc15ce2",
-        "signature": "16e67b08d6052a6323091e74139873eef33c5d4b306bd7d890b4c6873e42d452"
+        "version": "34e472399ed2806ae19ae33abfdad207dcb8db6b24f764f3aa7c4bb29d5d32b9",
+        "signature": "ade79fa666005d937043ac1065a1e80c489401e7c5029b93305edc531189fbad"
       },
       "../src/users/users.controller.ts": {
-        "version": "3e3d1891cd86473a51243e049f20cc8a643d3dfc4867e396b57093fd1afa568b",
-        "signature": "d9ee42e971dbd86b35a783ade64b41b3e7bc872be4d263a263554efb492077bd"
+        "version": "e574d1300ae4373c12a3729907e0a490ec5a21cae0c4b4c30fbc167506338496",
+        "signature": "1faf3c6a569b319441e9e5e0c839ed613bb9dbe359afd531c02bb3d662b004fc"
       },
       "../src/users/schemas/user.schema.ts": {
-        "version": "02d1d68110328a5f642b82436be8c6e8ae6b3fe6207aa73b4f8d8b5246cf28f5",
+        "version": "196fbcb0060db17487817adc6311da75d57a7d784d8f90981d257b9fda370de3",
         "signature": "88f96d37ada87eef41cd30e9d76e32fb1cdaf8ccc3201d0d0eff37ca03fd8d3c"
       },
       "../src/users/users.module.ts": {
@@ -2130,8 +2130,8 @@
         "signature": "12dec6c99bd8d11167fa91a31e737abbbf8c9cc789c151a25a9a1d13f328175c"
       },
       "../src/auth/auth.controller.ts": {
-        "version": "da56fa078f3ea67232737a27a8aeaf26681758800259a397d2afdaa748804b73",
-        "signature": "bd2ec8e4036fbafd75720f831bbb5d4cfdd363d06dee4eb62442812ed03b5066"
+        "version": "0bbf88f9205f023c956895a4526b3af1e6e7d0e90be33730fc2ef297c29920a2",
+        "signature": "39bbb6874ce1414bcdb9f07eb155947fcbaef5d769ba813c52c24948fa0e4f2d"
       },
       "../src/auth/auth.module.ts": {
         "version": "dc34c5b152b30507e4068005e9fc5d3202abae1bf1d6bfa8027cd9efdf9fd0c7",
@@ -6444,6 +6444,7 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
         "../src/users/interfaces/user.interface.ts",
+        "../src/auth/auth.service.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -12537,13 +12538,9 @@
       "../src/auth/local.strategy.ts",
       "../node_modules/@types/passport-jwt/index.d.ts",
       "../src/config/keys.ts",
-      "../src/users/dto/user.dto.ts",
-      "../src/users/users.controller.ts",
+      "../src/auth/jwt.strategy.ts",
       "../src/users/schemas/user.schema.ts",
-      "../src/users/users.module.ts",
       "../src/auth/auth.controller.ts",
-      "../src/auth/auth.module.ts",
-      "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
       "../node_modules/@nestjs/core/application-config.d.ts",
@@ -12609,7 +12606,11 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/auth/jwt.strategy.ts"
+      "../src/users/dto/user.dto.ts",
+      "../src/users/users.controller.ts",
+      "../src/users/users.module.ts",
+      "../src/auth/auth.module.ts",
+      "../src/app.module.ts"
     ]
   },
   "version": "3.7.2"

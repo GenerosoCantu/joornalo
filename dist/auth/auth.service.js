@@ -18,8 +18,8 @@ let AuthService = class AuthService {
         this.jwtService = jwtService;
         this.sessions = {};
     }
-    async validateUser(username, pass) {
-        let user = await this.usersService.findUser(username);
+    async validateUser(email, pass) {
+        let user = await this.usersService.findUser(email);
         if (user && user.password === pass && !user.locked) {
             return user;
         }
@@ -35,19 +35,22 @@ let AuthService = class AuthService {
         return 401;
     }
     async login(user) {
-        const payload = { username: user.username, sub: user['_id'] };
+        console.log('user::::::::::::');
+        console.log(user);
+        const payload = { email: user.email, sub: user['_id'] };
         let token = this.jwtService.sign(payload);
-        this.sessions[user.username] = token;
+        this.sessions[user.email] = token;
         console.log('---------------------------------');
         console.log(this.sessions);
         return {
-            access_token: token,
+            user: user,
+            accessToken: token,
         };
     }
     async validateSession(token) {
         console.log('validateSession-----------------------');
-        for (let [username, validToken] of Object.entries(this.sessions)) {
-            console.log(`${username}: ${validToken}`);
+        for (let [email, validToken] of Object.entries(this.sessions)) {
+            console.log(`${email}: ${validToken}`);
             if (validToken == token) {
                 return true;
             }

@@ -5,22 +5,28 @@ export class UserDto {
   @IsString()
   @IsNotEmpty()
   @ApiModelProperty()
-  readonly username: string;
+  readonly email: string;
 
   @IsString()
   @IsNotEmpty()
   @ApiModelProperty()
-  readonly name: string;
-
-  @IsBoolean()
-  @IsNotEmpty()
-  @ApiModelProperty()
-  readonly admin: boolean;
+  readonly role: string;
 
   @IsString()
   @IsNotEmpty()
+  @ApiModelProperty()
+  readonly firstName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @ApiModelProperty()
+  readonly lastName: string;
+
   @ApiModelProperty()
   readonly password: string;
+
+  @ApiModelProperty()
+  readonly phone: string;
 
   @ApiModelProperty()
   readonly reg_time: Date;
@@ -30,6 +36,9 @@ export class UserDto {
 
   @ApiModelProperty()
   readonly locked: boolean;
+
+  @ApiModelProperty()
+  readonly verified: boolean;
 
   @ApiModelProperty()
   readonly permissions: string[];

@@ -27,7 +27,7 @@ let JwtStrategy = class JwtStrategy extends passport_1.PassportStrategy(passport
         console.log('******************************');
         console.log(payload);
         const valid = await this.authService.validateSession('okokok');
-        return { userId: payload.sub, username: payload.username };
+        return { userId: payload.sub, email: payload.email };
     }
 };
 JwtStrategy = __decorate([

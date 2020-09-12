@@ -5,9 +5,10 @@ export declare class AuthService {
     private readonly jwtService;
     private sessions;
     constructor(usersService: UsersService, jwtService: JwtService);
-    validateUser(username: string, pass: string): Promise<any>;
+    validateUser(email: string, pass: string): Promise<any>;
     login(user: any): Promise<{
-        access_token: string;
+        user: any;
+        accessToken: string;
     }>;
     validateSession(token: any): Promise<boolean>;
 }

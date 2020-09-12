@@ -2,20 +2,24 @@ import { NumericLiteral } from "@babel/types";
 
 export interface User {
   id?: string;
-  username: string;
-  name: string;
+  email: string;
+  role: string;
+  firstName: string;
+  lastName: string;
   password: string;
+  phone: string;
   reg_time: Date;
   login_fail: number;
   locked: boolean;
-  admin: boolean;
+  verified: boolean;
 }
 
 export interface UserProfile {
   id?: string;
-  username: string;
-  name: string;
-  admin: boolean;
+  email: string;
+  firstName: string;
+  lastName: string;
+  role: string;
 }
 
 export interface Permissions {
