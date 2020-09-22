@@ -37,8 +37,9 @@ export class AuthService {
     this.sessions[user.email] = token;
     console.log('---------------------------------');
     console.log(this.sessions);
+    user.password = '@@@@@@@@@@';
     return {
-      user: user,
+      user,
       accessToken: token,
     };
   }

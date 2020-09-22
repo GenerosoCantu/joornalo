@@ -11,7 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const swagger_1 = require("@nestjs/swagger");
 const class_validator_1 = require("class-validator");
+const class_transformer_1 = require("class-transformer");
+const class_transformer_2 = require("class-transformer");
 class UserDto {
+    toJSON() {
+        return class_transformer_2.classToPlain(this);
+    }
 }
 __decorate([
     class_validator_1.IsString(),
@@ -38,7 +43,7 @@ __decorate([
     __metadata("design:type", String)
 ], UserDto.prototype, "lastName", void 0);
 __decorate([
-    swagger_1.ApiModelProperty(),
+    class_transformer_1.Exclude({ toPlainOnly: true }),
     __metadata("design:type", String)
 ], UserDto.prototype, "password", void 0);
 __decorate([
@@ -65,6 +70,10 @@ __decorate([
     swagger_1.ApiModelProperty(),
     __metadata("design:type", Array)
 ], UserDto.prototype, "permissions", void 0);
+__decorate([
+    swagger_1.ApiModelProperty(),
+    __metadata("design:type", String)
+], UserDto.prototype, "status", void 0);
 exports.UserDto = UserDto;
 class PermissionsDto {
 }

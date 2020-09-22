@@ -6,7 +6,10 @@ import { AuthService } from '../auth/auth.service';
 
 @Injectable()
 export class UsersService {
-  constructor(@InjectModel('User') private readonly userModel: Model<User>) { }
+  constructor(
+    @InjectModel('User') private readonly userModel: Model<User>,
+    // @InjectModel('UserPass') private readonly userPassModel: Model<UserPass>
+  ) { }
 
   async findAll(): Promise<User[]> {
     return await this.userModel.find();
@@ -20,8 +23,9 @@ export class UsersService {
 
   async update(id: string, user: User): Promise<User> {
     console.log('user----------------------');
+    console.log(id);
     console.log(user);
-    return await this.userModel.findByIdAndUpdate(id, user, { new: true });
+    return await this.userModel.findByIdAndUpdate(id, user, { new: true, useFindAndModify: false });
   }
 
   async sleep(ms) {

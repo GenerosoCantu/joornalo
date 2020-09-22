@@ -5,9 +5,11 @@ import { AppService } from './app.service';
 import { ItemsModule } from './items/items.module';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { SectionsModule } from './sections/sections.module';
+import { ModulesModule } from './modules/modules.module';
 import config from './config/keys'
 @Module({
-  imports: [MongooseModule.forRoot(config.mongoURI), AuthModule, UsersModule, ItemsModule],
+  imports: [MongooseModule.forRoot(config.mongoURI), AuthModule, UsersModule, SectionsModule, ModulesModule, ItemsModule],
   controllers: [AppController],
   providers: [AppService],
 })

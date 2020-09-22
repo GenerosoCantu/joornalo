@@ -29,8 +29,9 @@ let UsersService = class UsersService {
     }
     async update(id, user) {
         console.log('user----------------------');
+        console.log(id);
         console.log(user);
-        return await this.userModel.findByIdAndUpdate(id, user, { new: true });
+        return await this.userModel.findByIdAndUpdate(id, user, { new: true, useFindAndModify: false });
     }
     async sleep(ms) {
         return new Promise((resolve) => {

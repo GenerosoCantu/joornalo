@@ -10,6 +10,8 @@ export declare class UserDto {
     readonly locked: boolean;
     readonly verified: boolean;
     readonly permissions: string[];
+    readonly status: string;
+    toJSON(): Object;
 }
 export declare class PermissionsDto {
     readonly permissions: string[];

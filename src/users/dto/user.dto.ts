@@ -1,5 +1,7 @@
 import { ApiModelProperty } from '@nestjs/swagger';
 import { IsString, IsInt, IsNotEmpty, IsBoolean } from 'class-validator';
+import { Exclude } from 'class-transformer';
+import { classToPlain } from 'class-transformer';
 
 export class UserDto {
   @IsString()
@@ -22,7 +24,8 @@ export class UserDto {
   @ApiModelProperty()
   readonly lastName: string;
 
-  @ApiModelProperty()
+  // @ApiModelProperty()
+  @Exclude({ toPlainOnly: true })
   readonly password: string;
 
   @ApiModelProperty()
@@ -42,6 +45,17 @@ export class UserDto {
 
   @ApiModelProperty()
   readonly permissions: string[];
+
+  @ApiModelProperty()
+  readonly status: string;
+
+  toJSON() {
+    return classToPlain(this);
+  }
+
+  // constructor(partial: Partial<UserDto>) {
+  //   Object.assign(this, partial);
+  // }
 }
 
 export class PermissionsDto {

@@ -15,6 +15,10 @@ exports.UserSchema = new mongoose.Schema({
     lastName: String,
     password: String,
     phone: String,
+    status: {
+        type: String,
+        default: 'Pending'
+    },
     reg_time: {
         type: Date,
         default: Date.now

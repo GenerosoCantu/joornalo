@@ -13,12 +13,14 @@ const app_service_1 = require("./app.service");
 const items_module_1 = require("./items/items.module");
 const auth_module_1 = require("./auth/auth.module");
 const users_module_1 = require("./users/users.module");
+const sections_module_1 = require("./sections/sections.module");
+const modules_module_1 = require("./modules/modules.module");
 const keys_1 = require("./config/keys");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [mongoose_1.MongooseModule.forRoot(keys_1.default.mongoURI), auth_module_1.AuthModule, users_module_1.UsersModule, items_module_1.ItemsModule],
+        imports: [mongoose_1.MongooseModule.forRoot(keys_1.default.mongoURI), auth_module_1.AuthModule, users_module_1.UsersModule, sections_module_1.SectionsModule, modules_module_1.ModulesModule, items_module_1.ItemsModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })
