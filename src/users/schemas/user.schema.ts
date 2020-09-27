@@ -32,6 +32,8 @@ export const UserSchema = new mongoose.Schema({
     default: false
   },
   permissions: [String],
+  sections: [String],
+  modules: [String]
 }, {
   versionKey: false
 });

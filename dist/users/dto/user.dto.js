@@ -74,6 +74,14 @@ __decorate([
     swagger_1.ApiModelProperty(),
     __metadata("design:type", String)
 ], UserDto.prototype, "status", void 0);
+__decorate([
+    swagger_1.ApiModelProperty(),
+    __metadata("design:type", Array)
+], UserDto.prototype, "sections", void 0);
+__decorate([
+    swagger_1.ApiModelProperty(),
+    __metadata("design:type", Array)
+], UserDto.prototype, "modules", void 0);
 exports.UserDto = UserDto;
 class PermissionsDto {
 }

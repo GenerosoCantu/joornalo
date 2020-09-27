@@ -11,6 +11,8 @@ export declare class UserDto {
     readonly verified: boolean;
     readonly permissions: string[];
     readonly status: string;
+    readonly sections: string[];
+    readonly modules: string[];
     toJSON(): Object;
 }
 export declare class PermissionsDto {

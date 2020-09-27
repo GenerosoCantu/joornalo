@@ -49,6 +49,12 @@ export class UserDto {
   @ApiModelProperty()
   readonly status: string;
 
+  @ApiModelProperty()
+  readonly sections: string[];
+
+  @ApiModelProperty()
+  readonly modules: string[];
+
   toJSON() {
     return classToPlain(this);
   }

@@ -10,6 +10,8 @@ export declare class User {
     locked: boolean;
     verified: boolean;
     status: string;
+    sections: string[];
+    modules: string[];
     password: string;
 }
 export interface UserProfile {

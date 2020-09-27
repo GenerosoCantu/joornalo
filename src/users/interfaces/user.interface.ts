@@ -13,6 +13,8 @@ export class User {
   locked: boolean;
   verified: boolean;
   status: string;
+  sections: string[];
+  modules: string[];
 
   @Exclude({ toPlainOnly: true })
   password: string;
