@@ -2009,9 +2009,13 @@
         "version": "fe2dd344925008b80edeea9b4e1533516a30eabcef51b6e556948b4e609ffb32",
         "signature": "e575cd588712b798168fc9d076bc8e3979c11cde479c5fa0566389f1472a908a"
       },
+      "../node_modules/@types/hapi__joi/index.d.ts": {
+        "version": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5",
+        "signature": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5"
+      },
       "../src/users/users.service.ts": {
-        "version": "73cf8941dbc8319899930579797349b46a9cce259391218096b133adcac166ce",
-        "signature": "4931246e6a5d4d4ee2db2cbbbbc35518eef8573148ef0c91fe8112492ebeb064"
+        "version": "e3fdd0a63e3697918c481d006f9473172af5cdf356ed2c90a49b177924c1f532",
+        "signature": "613515cbdc306ee17406da0221dbe739030d201f33a251c5d146d6ce74f3244f"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
         "version": "3ee1c4479498ce568cf7789174c181a68a7f7f16f7b338132ded0daf24a8a971",
@@ -2042,7 +2046,7 @@
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
       "../src/auth/auth.service.ts": {
-        "version": "f63d099efebea92369e510b4243d8b26be690ff606c9abe96b5447dcd27fda52",
+        "version": "3e188bbe01571f091bda39c7fb9ddc69d64e024d7b7b23752f2cd0609d92eb72",
         "signature": "c01c301e07651eff2ea5001f70304bb50ff0fdcbf1689c86a7799d4491f8e6dd"
       },
       "../node_modules/@types/range-parser/index.d.ts": {
@@ -2138,7 +2142,7 @@
         "signature": "24fa20d394d1fe3d519e1c29521c1879d7c06370bce8d59702ef6fef31cea97f"
       },
       "../src/auth/jwt.strategy.ts": {
-        "version": "4246d903923a92b3b7fa4a1df2c4f2e4c2b4594b76136f9b53df2176e1273557",
+        "version": "801ca650603fb5ae0003377cf519a084062492d8071ce5f39421ed3cd49b3e45",
         "signature": "413f220b1fe4553f4d3f7b938fc0cb4b10955d72f3792d60fcecc0efee5718c0"
       },
       "../src/users/dto/user.dto.ts": {
@@ -2146,8 +2150,8 @@
         "signature": "b2bce717b408c2607b17412866e5b49bcfa02b9146fd87264830933eae298011"
       },
       "../src/users/users.controller.ts": {
-        "version": "e574d1300ae4373c12a3729907e0a490ec5a21cae0c4b4c30fbc167506338496",
-        "signature": "1faf3c6a569b319441e9e5e0c839ed613bb9dbe359afd531c02bb3d662b004fc"
+        "version": "2f670677019dbd7d16e84735884cc9fca32d624d882a44675bfcbac1b7043740",
+        "signature": "e84c7cd0f6be584ed05364fff846c97543279e2e65f395dc7a45a22a406ca003"
       },
       "../src/users/schemas/user.schema.ts": {
         "version": "4e3b21ba1748d22c1e30292f5e715334cbcee506c8ef9c69dcdabf0ecf459768",
@@ -2384,10 +2388,6 @@
       "../node_modules/@types/glob/index.d.ts": {
         "version": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
         "signature": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee"
-      },
-      "../node_modules/@types/hapi__joi/index.d.ts": {
-        "version": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5",
-        "signature": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5"
       },
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts": {
         "version": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd",
@@ -6566,11 +6566,18 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@types/hapi__joi/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/users/users.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
         "../src/users/interfaces/user.interface.ts",
         "../src/auth/auth.service.ts",
+        "../node_modules/@types/hapi__joi/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7372,12 +7379,6 @@
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/minimatch/index.d.ts",
         "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/hapi__joi/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -11545,6 +11546,12 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@types/hapi__joi/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/users/users.service.ts": [
         "../src/users/interfaces/user.interface.ts"
       ],
@@ -12145,12 +12152,6 @@
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/minimatch/index.d.ts",
         "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/hapi__joi/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -12808,6 +12809,7 @@
       "../node_modules/class-transformer/decorators.d.ts",
       "../node_modules/class-transformer/index.d.ts",
       "../src/users/interfaces/user.interface.ts",
+      "../node_modules/@types/hapi__joi/index.d.ts",
       "../src/users/users.service.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
@@ -12842,7 +12844,7 @@
       "../src/config/keys.ts",
       "../src/auth/jwt.strategy.ts",
       "../src/users/dto/user.dto.ts",
-      "../src/users/users.controller.ts",
+      "../src/users/schemas/user.schema.ts",
       "../src/users/users.module.ts",
       "../src/auth/auth.controller.ts",
       "../src/auth/auth.module.ts",
@@ -12901,7 +12903,6 @@
       "../node_modules/@types/cookiejar/index.d.ts",
       "../node_modules/@types/minimatch/index.d.ts",
       "../node_modules/@types/glob/index.d.ts",
-      "../node_modules/@types/hapi__joi/index.d.ts",
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts",
       "../node_modules/@types/istanbul-lib-report/index.d.ts",
       "../node_modules/@types/istanbul-reports/index.d.ts",
@@ -12923,7 +12924,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/users/schemas/user.schema.ts"
+      "../src/users/users.controller.ts"
     ]
   },
   "version": "3.7.2"

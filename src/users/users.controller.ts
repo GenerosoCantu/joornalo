@@ -23,7 +23,7 @@ export class UsersController {
   @UseGuards(AuthGuard('jwt'))
   @Get('profile')
   getProfile(@Request() req) {
-    //return req.user;
+    console.log('UsersController profile ++++++++++++++++++++++++++++++++');
     return this.usersService.findUserProfile(req.user.email);
   }
 
@@ -40,7 +40,7 @@ export class UsersController {
 
   @UseGuards(AuthGuard('jwt'))
   @Get()
-  findAll(): Promise<User[]> {
+  findAll() {
     return this.usersService.findAll();
   }
 

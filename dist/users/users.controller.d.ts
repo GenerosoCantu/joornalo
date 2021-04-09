@@ -7,7 +7,7 @@ export declare class UsersController {
     create(userDto: UserDto): Promise<User>;
     delete(id: any): Promise<User>;
     getProfile(req: any): Promise<any>;
-    findAll(): Promise<User[]>;
+    findAll(): Promise<any>;
     getUser(id: any): Promise<User>;
     updateUser(updateUserDto: UserDto, id: any): Promise<User>;
     update(permissionsDto: PermissionsDto, id: any): Promise<User>;

@@ -49,7 +49,6 @@ let AuthService = class AuthService {
         };
     }
     async validateSession(token) {
-        console.log('validateSession-----------------------');
         for (let [email, validToken] of Object.entries(this.sessions)) {
             console.log(`${email}: ${validToken}`);
             if (validToken == token) {

@@ -24,7 +24,7 @@ let JwtStrategy = class JwtStrategy extends passport_1.PassportStrategy(passport
         this.authService = authService;
     }
     async validate(payload) {
-        console.log('******************************');
+        console.log('JwtStrategy validate ******************************');
         console.log(payload);
         const valid = await this.authService.validateSession('okokok');
         return { userId: payload.sub, email: payload.email };

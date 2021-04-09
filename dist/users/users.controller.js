@@ -27,6 +27,7 @@ let UsersController = class UsersController {
         return this.usersService.delete(id);
     }
     getProfile(req) {
+        console.log('UsersController profile ++++++++++++++++++++++++++++++++');
         return this.usersService.findUserProfile(req.user.email);
     }
     findAll() {
@@ -70,7 +71,7 @@ __decorate([
     common_1.Get(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", void 0)
 ], UsersController.prototype, "findAll", null);
 __decorate([
     common_1.UseGuards(passport_1.AuthGuard('jwt')),
