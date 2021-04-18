@@ -1977,6 +1977,30 @@
         "version": "0a038c7be882dd411c6ee5ed172a6b9eaed54c19df23dea0f3b0d778c31d4095",
         "signature": "fc7cc18a8e5feb041bb7ba0e24175c89f34c30177a7266e5848e7c4017fac034"
       },
+      "../src/covers/dto/create-cover.dto.ts": {
+        "version": "79f1641ed9692df9cfeb88e1a819768cf48c3675ca014ae984efb17747ae26ec",
+        "signature": "1ba2ea5a4d5e79ae8e9a0899879b8cac387c84a4a2937a1c61404667003d38d9"
+      },
+      "../src/covers/interfaces/cover.interface.ts": {
+        "version": "427e5302baafa9dafd0a145287995697adb02704312e411ad19fa933e8b66d32",
+        "signature": "091fd4db267948bf8d7efe20f7224b04a831b725d03e964c068b3b67b3b7841f"
+      },
+      "../src/covers/covers.service.ts": {
+        "version": "3d9328e362e1adfeae407a988206e10c020f3272d8461334c28527b2bb5fdfa3",
+        "signature": "71519940758b1cdca4f0eed82ed9b65882cf810f4683fe8b2573313597cb4894"
+      },
+      "../src/covers/covers.controller.ts": {
+        "version": "7af620e0894be0e95b801fd1584606a1027bacecaa5b6a4c5b92978d7dcf2bc1",
+        "signature": "ed3f9f44f82510a2b462725f309b2cfb0143ce2a42780d433df84ba0a701dfd6"
+      },
+      "../src/covers/schemas/cover.schema.ts": {
+        "version": "e5c5395727d7d66e729b72179f9695874d6840baa3e5a2929f17cb2beefd392b",
+        "signature": "d87fac4c6b2de75d99d465715f651772293d575e13c3f57f02bcac5b8267fc34"
+      },
+      "../src/covers/covers.module.ts": {
+        "version": "fc2755784d57fa0101592607f37a283f46344b29984bd5d06147de939b4dfdfd",
+        "signature": "f99dc81a9dcc3a5079e4b2d582792412f834d4d7bcc78abd14a92896a13b274e"
+      },
       "../node_modules/class-transformer/classtransformoptions.d.ts": {
         "version": "d89af0c250e1424959162beae79f2c2745c729d6ab8028503d322395d96d3a2b",
         "signature": "d89af0c250e1424959162beae79f2c2745c729d6ab8028503d322395d96d3a2b"
@@ -2014,7 +2038,7 @@
         "signature": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5"
       },
       "../src/users/users.service.ts": {
-        "version": "e3fdd0a63e3697918c481d006f9473172af5cdf356ed2c90a49b177924c1f532",
+        "version": "1d3900542279541418c9d197b3bb1b408ee159203ed8d760782c7cbf2ca88e66",
         "signature": "613515cbdc306ee17406da0221dbe739030d201f33a251c5d146d6ce74f3244f"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -2046,8 +2070,8 @@
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
       "../src/auth/auth.service.ts": {
-        "version": "3e188bbe01571f091bda39c7fb9ddc69d64e024d7b7b23752f2cd0609d92eb72",
-        "signature": "c01c301e07651eff2ea5001f70304bb50ff0fdcbf1689c86a7799d4491f8e6dd"
+        "version": "f5da2e190152747e2526bdf28d2860fcc5e7db5fb1c4fe096a12ac4954c9fb3a",
+        "signature": "7d7c26fdec75e789486ee9c6b7a0f8fdd36f375381fcea96134d69349d541010"
       },
       "../node_modules/@types/range-parser/index.d.ts": {
         "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
@@ -2163,7 +2187,7 @@
       },
       "../src/auth/auth.controller.ts": {
         "version": "0bbf88f9205f023c956895a4526b3af1e6e7d0e90be33730fc2ef297c29920a2",
-        "signature": "39bbb6874ce1414bcdb9f07eb155947fcbaef5d769ba813c52c24948fa0e4f2d"
+        "signature": "63174b5de357732d265a0c1a401dbec02966412d6ca4b8c13e226b93a715bc1d"
       },
       "../src/auth/auth.module.ts": {
         "version": "dc34c5b152b30507e4068005e9fc5d3202abae1bf1d6bfa8027cd9efdf9fd0c7",
@@ -2214,7 +2238,7 @@
         "signature": "51f83f5fe6c6b91982753b3638d7a32bffb432038d4b45a1ec417e92b64d1f16"
       },
       "../src/app.module.ts": {
-        "version": "a2b75d173e7b63d70a48a342c3707c689818d068bee7fff953a492526461764b",
+        "version": "6545e05bb6b7e3d043a3d7d27f0c17264d0f4fb19b4d01b6cc4d956c260b2855",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "../node_modules/@nestjs/core/adapters/index.d.ts": {
@@ -6505,6 +6529,61 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/covers/dto/create-cover.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/interfaces/cover.interface.ts": [
+        "../node_modules/@babel/types/lib/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/covers.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/covers/interfaces/cover.interface.ts",
+        "../node_modules/rxjs/operators/index.d.ts",
+        "../node_modules/@google-cloud/storage/build/src/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/covers.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/covers/dto/create-cover.dto.ts",
+        "../src/covers/covers.service.ts",
+        "../src/covers/interfaces/cover.interface.ts",
+        "../node_modules/@nestjs/platform-express/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/schemas/cover.schema.ts": [
+        "../node_modules/@types/uuid/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/covers.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/covers/covers.controller.ts",
+        "../src/covers/covers.service.ts",
+        "../src/covers/schemas/cover.schema.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/class-transformer/classtransformoptions.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -7006,6 +7085,7 @@
         "../src/app.controller.ts",
         "../src/app.service.ts",
         "../src/items/items.module.ts",
+        "../src/covers/covers.module.ts",
         "../src/auth/auth.module.ts",
         "../src/users/users.module.ts",
         "../src/sections/sections.module.ts",
@@ -11493,6 +11573,14 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/covers/covers.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/covers/interfaces/cover.interface.ts"
+      ],
+      "../src/covers/covers.controller.ts": [
+        "../src/covers/covers.service.ts",
+        "../src/covers/interfaces/cover.interface.ts"
+      ],
       "../node_modules/class-transformer/classtransformoptions.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -12801,6 +12889,10 @@
       "../node_modules/@types/uuid/index.d.ts",
       "../src/items/schemas/item.schema.ts",
       "../src/items/items.module.ts",
+      "../src/covers/dto/create-cover.dto.ts",
+      "../src/covers/interfaces/cover.interface.ts",
+      "../src/covers/covers.service.ts",
+      "../src/covers/schemas/cover.schema.ts",
       "../node_modules/class-transformer/classtransformoptions.d.ts",
       "../node_modules/class-transformer/classtransformer.d.ts",
       "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
@@ -12844,6 +12936,7 @@
       "../src/config/keys.ts",
       "../src/auth/jwt.strategy.ts",
       "../src/users/dto/user.dto.ts",
+      "../src/users/users.controller.ts",
       "../src/users/schemas/user.schema.ts",
       "../src/users/users.module.ts",
       "../src/auth/auth.controller.ts",
@@ -12924,7 +13017,8 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/users/users.controller.ts"
+      "../src/covers/covers.controller.ts",
+      "../src/covers/covers.module.ts"
     ]
   },
   "version": "3.7.2"

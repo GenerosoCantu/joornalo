@@ -40,11 +40,8 @@ let AuthService = class AuthService {
         const payload = { email: user.email, sub: user['_id'] };
         let token = this.jwtService.sign(payload);
         this.sessions[user.email] = token;
-        console.log('---------------------------------');
-        console.log(this.sessions);
-        user.password = '@@@@@@@@@@';
         return {
-            user,
+            user: this.buildUser(user),
             accessToken: token,
         };
     }
@@ -56,6 +53,24 @@ let AuthService = class AuthService {
             }
             return false;
         }
+    }
+    buildUser(user) {
+        const userRO = {
+            _id: user.id,
+            email: user.email,
+            firstName: user.firstName,
+            lastName: user.lastName,
+            phone: user.phone,
+            role: user.role,
+            reg_time: user.reg_time,
+            login_fail: user.login_fail,
+            locked: user.locked,
+            verified: user.verified,
+            status: user.status,
+            modules: user.modules,
+            sections: user.sections
+        };
+        return userRO;
     }
 };
 AuthService = __decorate([

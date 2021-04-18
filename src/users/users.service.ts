@@ -66,9 +66,6 @@ export class UsersService {
     return await this.userModel.findByIdAndUpdate(id, permissions);
   }
 
-
-
-
   private buildUser(user: User) {
     const userRO = {
       _id: user.id,
