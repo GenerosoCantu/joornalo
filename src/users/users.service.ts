@@ -25,6 +25,9 @@ export class UsersService {
   }
 
   async update(id: string, user: User): Promise<any> {
+    console.log('==========================');
+    console.log(id);
+    console.log(user);
     const userTmp: User = await this.userModel.findByIdAndUpdate(id, user, { new: true, useFindAndModify: false });
     return this.buildUser(userTmp);
   }

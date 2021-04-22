@@ -28,7 +28,7 @@ export class SectionsService {
   }
 
   async update(id: string, section: Section): Promise<Section> {
-    return await this.sectionModel.findByIdAndUpdate(id, section, { new: true, useFindAndModify: false });
+    return await this.sectionModel.findByIdAndUpdate(section._id, section, { new: true, useFindAndModify: false });
   }
 
   async delete(id: string): Promise<Section> {

@@ -2038,7 +2038,7 @@
         "signature": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5"
       },
       "../src/users/users.service.ts": {
-        "version": "1d3900542279541418c9d197b3bb1b408ee159203ed8d760782c7cbf2ca88e66",
+        "version": "64deb8644e8d0173a0617b45e2c9d3b566a86205373a550519930229d54df1f8",
         "signature": "613515cbdc306ee17406da0221dbe739030d201f33a251c5d146d6ce74f3244f"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -2198,11 +2198,11 @@
         "signature": "5e30902eaad60a2787b15de7584c889ba78849177f1cb68d1566ca8cb8aa8c7a"
       },
       "../src/sections/interfaces/section.interface.ts": {
-        "version": "a9508c66ba09f5196991efe81211c3aaf67497c94ee5b93b6ef867e6b556a165",
-        "signature": "14c61425a491719a17d476c9176891300e8daa8699c0367ef055f25888197fcf"
+        "version": "ebd9c5d95743e0bc7d1afdb6145bfa36793633cca43d7f51c1e4f08b19230ec1",
+        "signature": "926ff6fb9294869cfc6f2435280c7b0f656b05b0d781cd530891219de1388008"
       },
       "../src/sections/sections.service.ts": {
-        "version": "7b39529256160583a0360cd38c58dc8e4df7fe4e346d6ac4efaf07bf93bf1cd8",
+        "version": "55066d76fdfc807d5958abcf6aa267229c7495f3b40a27e6029d054b3620ec56",
         "signature": "0dae897575d6887fec4a63ca37d37d020630dd3511940725c2a8d7fabd32c84b"
       },
       "../src/sections/sections.controller.ts": {
@@ -2210,7 +2210,7 @@
         "signature": "56dfd52f8a3293843d4a6106c83cda7155183e02bdbc265e4aa3a749451c7447"
       },
       "../src/sections/schemas/section.schema.ts": {
-        "version": "c6c1e8aded882c605a6eb41dd617e0bd041301d72ce8e2d85924b9b83dc00f5f",
+        "version": "0b824c08a5531afb4da30d201ebd44fc9e3920161273e84a85c3ac87cb35ab7f",
         "signature": "b5f4a9d4475be84ddb1eed541e45b6dd141413b25eb8a8e8e73ace07e0a689d6"
       },
       "../src/sections/sections.module.ts": {
@@ -2362,7 +2362,7 @@
         "signature": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe"
       },
       "../src/interceptors/interceptor.ts": {
-        "version": "eb16caff47b1718eb5eb0e0cbab86dee013bd7c6543d40c9ccf9df5dbc6b37f9",
+        "version": "2e7d31e4eb9fd1e36f15b27c70b7ade0af71fecb38f2d838d026057f33e2c489",
         "signature": "b87253830439a552f28f64d395087997bc0dd6dc25e942c4d01c935db87ce055"
       },
       "../src/exceptions/http-exception.filter.ts": {
@@ -12892,7 +12892,9 @@
       "../src/covers/dto/create-cover.dto.ts",
       "../src/covers/interfaces/cover.interface.ts",
       "../src/covers/covers.service.ts",
+      "../src/covers/covers.controller.ts",
       "../src/covers/schemas/cover.schema.ts",
+      "../src/covers/covers.module.ts",
       "../node_modules/class-transformer/classtransformoptions.d.ts",
       "../node_modules/class-transformer/classtransformer.d.ts",
       "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
@@ -12943,7 +12945,6 @@
       "../src/auth/auth.module.ts",
       "../src/sections/dto/section.dto.ts",
       "../src/sections/interfaces/section.interface.ts",
-      "../src/sections/sections.service.ts",
       "../src/sections/sections.controller.ts",
       "../src/sections/schemas/section.schema.ts",
       "../src/sections/sections.module.ts",
@@ -13017,8 +13018,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/covers/covers.controller.ts",
-      "../src/covers/covers.module.ts"
+      "../src/sections/sections.service.ts"
     ]
   },
   "version": "3.7.2"

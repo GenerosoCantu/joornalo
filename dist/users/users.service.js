@@ -30,6 +30,9 @@ let UsersService = class UsersService {
         return this.buildUser(userTmp);
     }
     async update(id, user) {
+        console.log('==========================');
+        console.log(id);
+        console.log(user);
         const userTmp = await this.userModel.findByIdAndUpdate(id, user, { new: true, useFindAndModify: false });
         return this.buildUser(userTmp);
     }

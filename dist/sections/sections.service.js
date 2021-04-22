@@ -35,7 +35,7 @@ let SectionsService = class SectionsService {
         return await newSection.save();
     }
     async update(id, section) {
-        return await this.sectionModel.findByIdAndUpdate(id, section, { new: true, useFindAndModify: false });
+        return await this.sectionModel.findByIdAndUpdate(section._id, section, { new: true, useFindAndModify: false });
     }
     async delete(id) {
         return await this.sectionModel.findByIdAndRemove(id);

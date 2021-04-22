@@ -16,15 +16,6 @@ let GeneralInterceptor = class GeneralInterceptor {
             .handle()
             .pipe(operators_1.tap((data) => {
             request.res.header('x-api-key', 'Pretty secure!');
-            if (Array.isArray(data)) {
-                return data.map(dat => {
-                    if (dat.password)
-                        dat.password = '@@@@@@@@@@@@@';
-                    return dat;
-                });
-            }
-            if (data.password)
-                data.password = '@@@@@@@@@@@@@';
             return data;
         }));
     }

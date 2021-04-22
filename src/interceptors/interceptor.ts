@@ -16,13 +16,13 @@ export class GeneralInterceptor implements NestInterceptor {
       .pipe(
         tap((data) => {
           request.res.header('x-api-key', 'Pretty secure!');
-          if (Array.isArray(data)) {
-            return data.map(dat => {
-              if (dat.password) dat.password = '@@@@@@@@@@@@@';
-              return dat;
-            })
-          }
-          if (data.password) data.password = '@@@@@@@@@@@@@';
+          // if (Array.isArray(data)) {
+          //   return data.map(dat => {
+          //     if (dat.password) dat.password = '@@@@@@@@@@@@@';
+          //     return dat;
+          //   })
+          // }
+          // if (data.password) data.password = '@@@@@@@@@@@@@';
           return data;
         })
       );
