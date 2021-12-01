@@ -24,6 +24,8 @@ export class SectionsService {
 
   async create(section: Section): Promise<Section> {
     const newSection = new this.sectionModel(section);
+    console.log('newSection==========================');
+    console.log(newSection);
     return await newSection.save();
   }
 

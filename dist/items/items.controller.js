@@ -17,6 +17,8 @@ const create_item_dto_1 = require("./dto/create-item.dto");
 const items_service_1 = require("./items.service");
 const common_2 = require("@nestjs/common");
 const platform_express_1 = require("@nestjs/platform-express");
+const file_upload_utils_1 = require("../utils/file-upload.utils");
+const multer_1 = require("multer");
 let ItemsController = class ItemsController {
     constructor(itemsService) {
         this.itemsService = itemsService;
@@ -36,8 +38,18 @@ let ItemsController = class ItemsController {
     update(updateItemDto, id) {
         return this.itemsService.update(id, updateItemDto);
     }
-    async uploadFile(file) {
+    async uploadFile(file, body) {
+        console.log(body.name);
+        console.log('file----', file);
         return this.itemsService.uploadFile(file);
+    }
+    async uploadedFile(file) {
+        console.log(file);
+        const response = {
+            originalname: file.originalname,
+            filename: file.filename,
+        };
+        return response;
     }
 };
 __decorate([
@@ -75,13 +87,26 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], ItemsController.prototype, "update", null);
 __decorate([
-    common_1.Post('upload'),
+    common_1.Post('uploadx'),
     common_2.UseInterceptors(platform_express_1.FilesInterceptor('file', 1, { dest: './data/tmp' })),
-    __param(0, common_2.UploadedFiles()),
+    __param(0, common_2.UploadedFiles()), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], ItemsController.prototype, "uploadFile", null);
+__decorate([
+    common_1.Post('upload'),
+    common_2.UseInterceptors(platform_express_1.FileInterceptor('file', {
+        storage: multer_1.diskStorage({
+            destination: './data/tmp',
+        }),
+        fileFilter: file_upload_utils_1.imageFileFilter,
+    })),
+    __param(0, common_2.UploadedFile()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
-], ItemsController.prototype, "uploadFile", null);
+], ItemsController.prototype, "uploadedFile", null);
 ItemsController = __decorate([
     common_1.Controller('items'),
     __metadata("design:paramtypes", [items_service_1.ItemsService])

@@ -8,22 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const mongoose_1 = require("@nestjs/mongoose");
-const app_controller_1 = require("./app.controller");
-const app_service_1 = require("./app.service");
 const items_module_1 = require("./items/items.module");
+const files_module_1 = require("./files/files.module");
 const covers_module_1 = require("./covers/covers.module");
 const auth_module_1 = require("./auth/auth.module");
 const users_module_1 = require("./users/users.module");
 const sections_module_1 = require("./sections/sections.module");
 const modules_module_1 = require("./modules/modules.module");
+const news_module_1 = require("./news/news.module");
 const keys_1 = require("./config/keys");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [mongoose_1.MongooseModule.forRoot(keys_1.default.mongoURI), auth_module_1.AuthModule, users_module_1.UsersModule, sections_module_1.SectionsModule, modules_module_1.ModulesModule, covers_module_1.CoversModule, items_module_1.ItemsModule],
-        controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        imports: [mongoose_1.MongooseModule.forRoot(keys_1.default.mongoURI), auth_module_1.AuthModule, users_module_1.UsersModule, sections_module_1.SectionsModule, modules_module_1.ModulesModule, news_module_1.NewsModule, covers_module_1.CoversModule, items_module_1.ItemsModule, files_module_1.FilesModule],
     })
 ], AppModule);
 exports.AppModule = AppModule;

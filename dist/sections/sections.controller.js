@@ -27,6 +27,8 @@ let SectionsController = class SectionsController {
         return this.sectionsService.findOne(id);
     }
     create(sectionDto) {
+        console.log('sectionDto==========================');
+        console.log(sectionDto);
         return this.sectionsService.create(sectionDto);
     }
     updateSection(updateSectionDto, id) {

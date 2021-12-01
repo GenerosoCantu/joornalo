@@ -23,6 +23,8 @@ export class SectionsController {
   @Post()
   @UseGuards(AuthGuard('jwt'))
   create(@Body() sectionDto: SectionDto): Promise<Section> {
+    console.log('sectionDto==========================');
+    console.log(sectionDto);
     return this.sectionsService.create(sectionDto);
   }
 

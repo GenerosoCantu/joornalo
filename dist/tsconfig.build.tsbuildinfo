@@ -1330,8 +1330,8 @@
         "signature": "9cebab89871446e2e9f2c8599cb22696c08207cf5bc21adb8f9752d582c5055e"
       },
       "../src/items/interfaces/item.interface.ts": {
-        "version": "41af19fbdb3f3ef828264f20e3cc002e2168042cf504c6f587236b8fc9729a5b",
-        "signature": "fcaae635a7493777db0ac58d2e0ddbe61f5a18ac46a1af3e7d5929e74d91b0bc"
+        "version": "76336dd443f826059fc66c91b00cf94d5b32cbc14c610c8b0b3e7f6c2cb97292",
+        "signature": "e164beac715d52edd57d621136e89155d4991ee8133f52f8501fafb8e06f4fb8"
       },
       "../node_modules/rxjs/internal/operators/audit.d.ts": {
         "version": "fe936a68d281ccc2060f8c3de69a0682a807c8fd1b8abccc0a91b83195ca0f94",
@@ -1886,7 +1886,7 @@
         "signature": "076c9f26394e19e834f74eb53f87a8242c0d9ba05c47e63a873907f9a111a183"
       },
       "../src/items/items.service.ts": {
-        "version": "5180a7b802b84b86cc5c4534bcfce969ee2a88b570a31162a36bba463362fd87",
+        "version": "ad7f7bc514cff6486a81a726cc1e2e210e6e6b386a97ed7cdcb45ec2924aa915",
         "signature": "39a1dd47e3a9e94cabe14a46e2cd51ffa6949a5a8f26729b64247eaca0812902"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -1957,9 +1957,13 @@
         "version": "e3cd60be3c4f95c43420be67eaa21637585b7c1a8129f9b39983bbd294f9513c",
         "signature": "e3cd60be3c4f95c43420be67eaa21637585b7c1a8129f9b39983bbd294f9513c"
       },
+      "../src/utils/file-upload.utils.ts": {
+        "version": "ae75ae654eab9b5a51784ed69c1c751b64d51fd03097ee50ded5ee429fc4320d",
+        "signature": "0aab5a5d56db6d9591f2b8c4415d74a5f6a8f8be1d688389ed6f3dbcfa44ec91"
+      },
       "../src/items/items.controller.ts": {
-        "version": "bcd1cac68acd20ccc87e61b84f01c6f50f4d63e307a050acb72897647ca2d729",
-        "signature": "ff103cab98a6da24638520511f47c5a898f69f9c9d0aa7ea071d2c564e196604"
+        "version": "10b2ca839478fda984584feae96a57cf9dc5537c13005d83b69846bb513f6174",
+        "signature": "cb6106a2528de55d3c0daee2e0d82b28e5f4c59b1799f76840c6b7d9a42adfc1"
       },
       "../node_modules/@types/uuid/interfaces.d.ts": {
         "version": "1ea35410428b662835f11e9df76672cb8b76c37807c4593df59a0f40d76cf137",
@@ -1976,6 +1980,18 @@
       "../src/items/items.module.ts": {
         "version": "0a038c7be882dd411c6ee5ed172a6b9eaed54c19df23dea0f3b0d778c31d4095",
         "signature": "fc7cc18a8e5feb041bb7ba0e24175c89f34c30177a7266e5848e7c4017fac034"
+      },
+      "../src/files/files.service.ts": {
+        "version": "8eb2a22a6675a5a63bac2eb2a87d18db277e6e0662cebad5eb42874fc5add482",
+        "signature": "4582847131fc99b97b9a4e44c88038094c26864a6d1df29d0bb2e1e8748f5a4b"
+      },
+      "../src/files/files.controller.ts": {
+        "version": "b9b270b30e112d85115447b30d73ee8c2ff1d3929eb302c1d7ca7ee0fa599081",
+        "signature": "c4ce22e1c16b4168ec9e10b36b7de75ad0f504fdf13ebf2b82ef89887d7898b9"
+      },
+      "../src/files/files.module.ts": {
+        "version": "0dcbf9b8ae4cf3610f542735bea3cc2e12685072186d2dd9a72813d5e916c600",
+        "signature": "3a86ac7f72f5e69f56d0ce8eda8ea581bb2301e2bea6c1f277f2935253089181"
       },
       "../src/covers/dto/create-cover.dto.ts": {
         "version": "79f1641ed9692df9cfeb88e1a819768cf48c3675ca014ae984efb17747ae26ec",
@@ -2202,11 +2218,11 @@
         "signature": "926ff6fb9294869cfc6f2435280c7b0f656b05b0d781cd530891219de1388008"
       },
       "../src/sections/sections.service.ts": {
-        "version": "55066d76fdfc807d5958abcf6aa267229c7495f3b40a27e6029d054b3620ec56",
+        "version": "3ccc441847297716f1b798a3e7220fa1ac75d1554f2e3fc06ca2cfb10f26302c",
         "signature": "0dae897575d6887fec4a63ca37d37d020630dd3511940725c2a8d7fabd32c84b"
       },
       "../src/sections/sections.controller.ts": {
-        "version": "3bcb552083f421fcf82de6885e78297d3b6ca7a12eb4c37c6c5cd5fc19912442",
+        "version": "a108dd31ad4f2c0e2cd1b4f2a4a1a9140117b214fee798d7948b90db033f1d8c",
         "signature": "56dfd52f8a3293843d4a6106c83cda7155183e02bdbc265e4aa3a749451c7447"
       },
       "../src/sections/schemas/section.schema.ts": {
@@ -2237,8 +2253,36 @@
         "version": "a9c649e4c9b14024014f97d2eb45493c018dbe62cc9f2d5522d5cd57560c6ad7",
         "signature": "51f83f5fe6c6b91982753b3638d7a32bffb432038d4b45a1ec417e92b64d1f16"
       },
+      "../src/news/dto/news.dto.ts": {
+        "version": "ce4abdce1d54240f5ca75aea373a84aa5a3d6bfa75299376a51ed7acfb3ce245",
+        "signature": "1fa80404b44a4ee576b331cc0c5e4bd9ca2de124c9f12dfdfd0c8e789494bc67"
+      },
+      "../src/news/interfaces/news.interface.ts": {
+        "version": "b22a985ae80005c8c97d431c64d333d4977f45e1c656e29b7aa49d8221460113",
+        "signature": "e460f7d3cc95070bc7758667e4bbd8a0a50741cf3395594283216fe7ac07c973"
+      },
+      "../src/utils/file-json.utils.ts": {
+        "version": "7a86832cf4bc800c18590564a611044528c4897bd5c0d7c8fb18055100ed5e39",
+        "signature": "da0e7ac99f53db2db8ed82bb20a2569c750f16a0aab052e8ca0cb73e77199533"
+      },
+      "../src/news/news.service.ts": {
+        "version": "6f3649dd7cd0c95d4ae9d4b997224cd7beeffe0ebd4f27a874a22f4e86448d35",
+        "signature": "5d5f3f6c8267289883c96ab942b169c30b18a319558f5e421a071bebe5ad44ee"
+      },
+      "../src/news/news.controller.ts": {
+        "version": "6f8d519f16851c5ca597b725cfdc564dec2ac4ea5d4ebe7e87c074bb29f0af5e",
+        "signature": "9bb456c24826d46a1eca3c60b5e5ca4ad4c530bc3b4c9cfa4f02b27dfd9b76f5"
+      },
+      "../src/news/schemas/news.schema.ts": {
+        "version": "fefabd51cb156dc5e2c629c448e353fbb94240ae89bc5ca1565d4488c9b5d36c",
+        "signature": "e35f5adb9239f626c2c8f29e3198cc17ccab43bd0920fbb3423f0221368ffadf"
+      },
+      "../src/news/news.module.ts": {
+        "version": "ca47eaf6a9ea79053c48c943b1fda6f3723ab88d35a289086c2a4acebc64b459",
+        "signature": "1c53868a04873adbddfd4717cb06b4bbc166d9f86688a4fdc40a654ca172ea8b"
+      },
       "../src/app.module.ts": {
-        "version": "6545e05bb6b7e3d043a3d7d27f0c17264d0f4fb19b4d01b6cc4d956c260b2855",
+        "version": "e4dbaaeb0dcf50cb3cd52fdf1a2ec88c152f19ef508ca54ee3ed63e1c25de410",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "../node_modules/@nestjs/core/adapters/index.d.ts": {
@@ -6486,12 +6530,20 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/utils/file-upload.utils.ts": [
+        "../node_modules/@types/node/path.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/items/items.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/items/dto/create-item.dto.ts",
         "../src/items/items.service.ts",
         "../src/items/interfaces/item.interface.ts",
         "../node_modules/@nestjs/platform-express/index.d.ts",
+        "../src/utils/file-upload.utils.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6524,6 +6576,32 @@
         "../src/items/items.controller.ts",
         "../src/items/items.service.ts",
         "../src/items/schemas/item.schema.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/files/files.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/files/files.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/files/files.service.ts",
+        "../node_modules/@nestjs/platform-express/index.d.ts",
+        "../src/utils/file-upload.utils.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/files/files.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/files/files.controller.ts",
+        "../src/files/files.service.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7079,17 +7157,79 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/news/dto/news.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/class-transformer/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/news/interfaces/news.interface.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/utils/file-json.utils.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/news/news.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/news/interfaces/news.interface.ts",
+        "../src/utils/file-json.utils.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/news/news.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../src/news/dto/news.dto.ts",
+        "../src/news/news.service.ts",
+        "../src/news/interfaces/news.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/news/schemas/news.schema.ts": [
+        "../node_modules/@types/uuid/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/news/news.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/news/news.controller.ts",
+        "../src/news/news.service.ts",
+        "../src/news/schemas/news.schema.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
         "../src/items/items.module.ts",
+        "../src/files/files.module.ts",
         "../src/covers/covers.module.ts",
         "../src/auth/auth.module.ts",
         "../src/users/users.module.ts",
         "../src/sections/sections.module.ts",
         "../src/modules/modules.module.ts",
+        "../src/news/news.module.ts",
         "../src/config/keys.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -11573,6 +11713,9 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/files/files.controller.ts": [
+        "../src/files/files.service.ts"
+      ],
       "../src/covers/covers.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/covers/interfaces/cover.interface.ts"
@@ -11898,6 +12041,14 @@
       "../src/modules/modules.controller.ts": [
         "../src/modules/modules.service.ts",
         "../src/modules/interfaces/module.interface.ts"
+      ],
+      "../src/news/news.service.ts": [
+        "../src/news/interfaces/news.interface.ts"
+      ],
+      "../src/news/news.controller.ts": [
+        "../src/news/news.service.ts",
+        "../src/news/interfaces/news.interface.ts",
+        "../src/news/dto/news.dto.ts"
       ],
       "../node_modules/@nestjs/core/adapters/index.d.ts": [
         "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -12884,7 +13035,6 @@
       "../node_modules/@nestjs/platform-express/multer/multer.module.d.ts",
       "../node_modules/@nestjs/platform-express/multer/index.d.ts",
       "../node_modules/@nestjs/platform-express/index.d.ts",
-      "../src/items/items.controller.ts",
       "../node_modules/@types/uuid/interfaces.d.ts",
       "../node_modules/@types/uuid/index.d.ts",
       "../src/items/schemas/item.schema.ts",
@@ -12945,6 +13095,7 @@
       "../src/auth/auth.module.ts",
       "../src/sections/dto/section.dto.ts",
       "../src/sections/interfaces/section.interface.ts",
+      "../src/sections/sections.service.ts",
       "../src/sections/sections.controller.ts",
       "../src/sections/schemas/section.schema.ts",
       "../src/sections/sections.module.ts",
@@ -12953,7 +13104,11 @@
       "../src/modules/modules.controller.ts",
       "../src/modules/schemas/module.schema.ts",
       "../src/modules/modules.module.ts",
-      "../src/app.module.ts",
+      "../src/news/dto/news.dto.ts",
+      "../src/news/interfaces/news.interface.ts",
+      "../src/news/news.controller.ts",
+      "../src/news/schemas/news.schema.ts",
+      "../src/news/news.module.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
       "../node_modules/@nestjs/core/application-config.d.ts",
@@ -13017,8 +13172,7 @@
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
-      "../node_modules/@types/yargs/index.d.ts",
-      "../src/sections/sections.service.ts"
+      "../node_modules/@types/yargs/index.d.ts"
     ]
   },
   "version": "3.7.2"

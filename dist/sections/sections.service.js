@@ -32,6 +32,8 @@ let SectionsService = class SectionsService {
     }
     async create(section) {
         const newSection = new this.sectionModel(section);
+        console.log('newSection==========================');
+        console.log(newSection);
         return await newSection.save();
     }
     async update(id, section) {
