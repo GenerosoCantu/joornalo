@@ -30,13 +30,10 @@ let NewsService = class NewsService {
     }
     async create(news) {
         const newNews = new this.newsModel(news);
-        file_json_utils_1.createJsonFile('data/news/', newNews['_id'], newNews);
+        file_json_utils_1.createNewsJsonFile('data/news/', newNews['_id'], newNews);
         return await newNews.save();
     }
     async update(id, news) {
-        console.log('==========================');
-        console.log(id);
-        console.log(news);
         return await this.newsModel.findByIdAndUpdate(id, news, { new: true, useFindAndModify: false });
     }
     async delete(id) {

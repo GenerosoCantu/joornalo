@@ -2,7 +2,7 @@ import { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { News } from './interfaces/news.interface'
-import { createJsonFile } from '../utils/file-json.utils';
+import { createNewsJsonFile } from '../utils/file-json.utils';
 // import * as fs from 'fs';
 
 @Injectable()
@@ -27,16 +27,11 @@ export class NewsService {
 
   async create(news: News): Promise<News> {
     const newNews = new this.newsModel(news);
-    console.log('newNews==========================');
-    console.log(newNews);
-    createJsonFile('data/news/', newNews['_id'], newNews);
+    createNewsJsonFile('data/news/', newNews['_id'], newNews);
     return await newNews.save();
   }
 
   async update(id: string, news: News): Promise<News> {
-    console.log('==========================');
-    console.log(id);
-    console.log(news);
     return await this.newsModel.findByIdAndUpdate(id, news, { new: true, useFindAndModify: false });
   }
 

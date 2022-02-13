@@ -2262,11 +2262,11 @@
         "signature": "e460f7d3cc95070bc7758667e4bbd8a0a50741cf3395594283216fe7ac07c973"
       },
       "../src/utils/file-json.utils.ts": {
-        "version": "7a86832cf4bc800c18590564a611044528c4897bd5c0d7c8fb18055100ed5e39",
-        "signature": "da0e7ac99f53db2db8ed82bb20a2569c750f16a0aab052e8ca0cb73e77199533"
+        "version": "956825784c48e31daa4ac353aa2d2f648145eee97f5238d54da3fa0782c72f92",
+        "signature": "faf00b88a3e2250ede5b2dddcd3b2f737d9436e14fd127ba9b3f808815e760bf"
       },
       "../src/news/news.service.ts": {
-        "version": "6f3649dd7cd0c95d4ae9d4b997224cd7beeffe0ebd4f27a874a22f4e86448d35",
+        "version": "618671b2980f224f812ec8bced40dcfda0f3a4c8f4e1fb753df879ae7d599745",
         "signature": "5d5f3f6c8267289883c96ab942b169c30b18a319558f5e421a071bebe5ad44ee"
       },
       "../src/news/news.controller.ts": {
@@ -13035,10 +13035,15 @@
       "../node_modules/@nestjs/platform-express/multer/multer.module.d.ts",
       "../node_modules/@nestjs/platform-express/multer/index.d.ts",
       "../node_modules/@nestjs/platform-express/index.d.ts",
+      "../src/utils/file-upload.utils.ts",
+      "../src/items/items.controller.ts",
       "../node_modules/@types/uuid/interfaces.d.ts",
       "../node_modules/@types/uuid/index.d.ts",
       "../src/items/schemas/item.schema.ts",
       "../src/items/items.module.ts",
+      "../src/files/files.service.ts",
+      "../src/files/files.controller.ts",
+      "../src/files/files.module.ts",
       "../src/covers/dto/create-cover.dto.ts",
       "../src/covers/interfaces/cover.interface.ts",
       "../src/covers/covers.service.ts",
@@ -13106,9 +13111,11 @@
       "../src/modules/modules.module.ts",
       "../src/news/dto/news.dto.ts",
       "../src/news/interfaces/news.interface.ts",
+      "../src/utils/file-json.utils.ts",
       "../src/news/news.controller.ts",
       "../src/news/schemas/news.schema.ts",
       "../src/news/news.module.ts",
+      "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
       "../node_modules/@nestjs/core/application-config.d.ts",
@@ -13172,7 +13179,8 @@
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
-      "../node_modules/@types/yargs/index.d.ts"
+      "../node_modules/@types/yargs/index.d.ts",
+      "../src/news/news.service.ts"
     ]
   },
   "version": "3.7.2"
