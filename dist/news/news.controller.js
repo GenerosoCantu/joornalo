@@ -20,8 +20,9 @@ let NewsController = class NewsController {
     constructor(newsService) {
         this.newsService = newsService;
     }
-    findAll() {
-        return this.newsService.findAll();
+    findAll({ page, limit, section, status, sortBy, sortOrder, date }) {
+        console.log(sortBy, ':::', sortOrder);
+        return this.newsService.findAll(page, limit, section, status, sortBy, sortOrder, date);
     }
     getNews(id) {
         return this.newsService.findOne(id);
@@ -39,8 +40,9 @@ let NewsController = class NewsController {
 __decorate([
     common_1.UseGuards(passport_1.AuthGuard('jwt')),
     common_1.Get(),
+    __param(0, common_1.Query()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], NewsController.prototype, "findAll", null);
 __decorate([

@@ -21,8 +21,31 @@ let NewsService = class NewsService {
     constructor(newsModel) {
         this.newsModel = newsModel;
     }
-    async findAll() {
-        return await this.newsModel.find();
+    async findAll(page = 0, limit = 10, section, status, sortBy = 'date', sortOrder = '-1', date = null) {
+        const match = Object.assign(Object.assign(Object.assign({}, (section && { section })), (status && { status })), (date && { date: { $gte: new Date(date + ' 00:00:00'), $lte: new Date(date + ' 23:59:59') } }));
+        const skip = page * limit;
+        const response = await this.newsModel.aggregate([
+            { $match: match },
+            { '$sort': { 'date': sortOrder === '1' ? 1 : -1 } },
+            {
+                '$facet': {
+                    metadata: [
+                        { $count: "totalItems" },
+                        {
+                            $addFields: {
+                                itemsPerPage: limit,
+                                page
+                            }
+                        }
+                    ],
+                    data: [{ $skip: +skip }, { $limit: +limit }]
+                }
+            }
+        ]);
+        return {
+            metadata: response[0].metadata[0],
+            data: response[0].data
+        };
     }
     async findOne(id) {
         console.log('findOne:', id);

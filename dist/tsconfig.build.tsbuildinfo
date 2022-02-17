@@ -2258,7 +2258,7 @@
         "signature": "1fa80404b44a4ee576b331cc0c5e4bd9ca2de124c9f12dfdfd0c8e789494bc67"
       },
       "../src/news/interfaces/news.interface.ts": {
-        "version": "b22a985ae80005c8c97d431c64d333d4977f45e1c656e29b7aa49d8221460113",
+        "version": "1d09dbe325a0788a20424250f3152edec373fcf2da3897c0eee8ab9c4e3b45d1",
         "signature": "e460f7d3cc95070bc7758667e4bbd8a0a50741cf3395594283216fe7ac07c973"
       },
       "../src/utils/file-json.utils.ts": {
@@ -2266,12 +2266,12 @@
         "signature": "faf00b88a3e2250ede5b2dddcd3b2f737d9436e14fd127ba9b3f808815e760bf"
       },
       "../src/news/news.service.ts": {
-        "version": "618671b2980f224f812ec8bced40dcfda0f3a4c8f4e1fb753df879ae7d599745",
-        "signature": "5d5f3f6c8267289883c96ab942b169c30b18a319558f5e421a071bebe5ad44ee"
+        "version": "650e6b7f00d7e079b0ed5a53554266497a893179a54dbcf2f8f71ac8f6231f06",
+        "signature": "eda5945ba553dea997dfd50d9fe645ca6e1cf828f1472ab70b239f5600e56ab8"
       },
       "../src/news/news.controller.ts": {
-        "version": "6f8d519f16851c5ca597b725cfdc564dec2ac4ea5d4ebe7e87c074bb29f0af5e",
-        "signature": "9bb456c24826d46a1eca3c60b5e5ca4ad4c530bc3b4c9cfa4f02b27dfd9b76f5"
+        "version": "f32bfda52d25913fa62c22cfb181d0d207850f4c6f8d8d601a14042d90744fc3",
+        "signature": "75aad61ffe78ac084e87d7992d29ff21af6de5cd6e0f8f3fc2c6c6d990abe094"
       },
       "../src/news/schemas/news.schema.ts": {
         "version": "fefabd51cb156dc5e2c629c448e353fbb94240ae89bc5ca1565d4488c9b5d36c",
@@ -13110,8 +13110,8 @@
       "../src/modules/schemas/module.schema.ts",
       "../src/modules/modules.module.ts",
       "../src/news/dto/news.dto.ts",
-      "../src/news/interfaces/news.interface.ts",
       "../src/utils/file-json.utils.ts",
+      "../src/news/news.service.ts",
       "../src/news/news.controller.ts",
       "../src/news/schemas/news.schema.ts",
       "../src/news/news.module.ts",
@@ -13180,7 +13180,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/news/news.service.ts"
+      "../src/news/interfaces/news.interface.ts"
     ]
   },
   "version": "3.7.2"

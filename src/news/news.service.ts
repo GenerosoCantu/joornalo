@@ -11,9 +11,42 @@ export class NewsService {
     @InjectModel('News') private readonly newsModel: Model<News>
   ) { }
 
-  async findAll(): Promise<News[]> {
-    // need to limit the number and paginate
-    return await this.newsModel.find();
+  async findAll(page: number = 0, limit: number = 10, section, status, sortBy = 'date', sortOrder = '-1', date = null): Promise<any> {
+    // title search index TBD
+    // return await this.newsModel.find();
+    // http://localhost:4000/news/?page=0&limit=5&section=international&status=Pending&sortBy=date&sortOrder=-1&date=12/1/2021
+
+    const match = {
+      ...(section && { section }),
+      ...(status && { status }),
+      ...(date && { date: { $gte: new Date(date + ' 00:00:00'), $lte: new Date(date + ' 23:59:59') } })
+    };
+
+    const skip = page * limit
+
+    const response = await this.newsModel.aggregate([
+      { $match: match },
+      { '$sort': { 'date': sortOrder === '1' ? 1 : -1 } },
+      {
+        '$facet': {
+          metadata: [
+            { $count: "totalItems" },
+            {
+              $addFields: {
+                itemsPerPage: limit,
+                page
+              }
+            }
+          ],
+          data: [{ $skip: +skip }, { $limit: +limit }]
+        }
+      }
+    ]);
+
+    return {
+      metadata: response[0].metadata[0],
+      data: response[0].data
+    }
   }
 
   async findOne(id: string): Promise<News> {

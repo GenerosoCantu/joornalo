@@ -1,4 +1,4 @@
-import { Controller, Request, Get, Post, Put, Patch, Delete, Body, Param, Header, UseGuards, UseInterceptors } from '@nestjs/common';
+import { Controller, Request, Get, Post, Put, Patch, Delete, Body, Param, Header, UseGuards, Query, UseInterceptors } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { NewsDto } from './dto/news.dto';
 import { NewsService } from './news.service';
@@ -10,8 +10,9 @@ export class NewsController {
 
   @UseGuards(AuthGuard('jwt'))
   @Get()
-  findAll(): Promise<News[]> {
-    return this.newsService.findAll();
+  findAll(@Query() { page, limit, section, status, sortBy, sortOrder, date }): Promise<any> {
+    console.log(sortBy, ':::', sortOrder)
+    return this.newsService.findAll(page, limit, section, status, sortBy, sortOrder, date);
   }
 
   @UseGuards(AuthGuard('jwt'))
