@@ -7,7 +7,7 @@ exports.createJsonFile = (path, fileName, obj) => {
             throw err;
     });
 };
-exports.createNewsJsonFile = (path, fileName, obj) => {
+exports.createStoryJsonFile = (path, fileName, obj) => {
     const folders = fileName.split('');
     const newPath = path + folders[0] + '/' + folders[1] + '/';
     console.log(newPath);

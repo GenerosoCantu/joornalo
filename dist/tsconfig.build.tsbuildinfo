@@ -2253,36 +2253,36 @@
         "version": "a9c649e4c9b14024014f97d2eb45493c018dbe62cc9f2d5522d5cd57560c6ad7",
         "signature": "51f83f5fe6c6b91982753b3638d7a32bffb432038d4b45a1ec417e92b64d1f16"
       },
-      "../src/news/dto/news.dto.ts": {
-        "version": "ce4abdce1d54240f5ca75aea373a84aa5a3d6bfa75299376a51ed7acfb3ce245",
-        "signature": "1fa80404b44a4ee576b331cc0c5e4bd9ca2de124c9f12dfdfd0c8e789494bc67"
+      "../src/stories/dto/stories.dto.ts": {
+        "version": "beb2496ee1a054c097c84ca40910f636988b22ba9a0e14a6b7ed11a152267b13",
+        "signature": "cbfdab6b6be3a074560f22e9e25875ddf839b6da69d25271e32fba32a5357ac0"
       },
-      "../src/news/interfaces/news.interface.ts": {
-        "version": "1d09dbe325a0788a20424250f3152edec373fcf2da3897c0eee8ab9c4e3b45d1",
-        "signature": "e460f7d3cc95070bc7758667e4bbd8a0a50741cf3395594283216fe7ac07c973"
+      "../src/stories/interfaces/stories.interface.ts": {
+        "version": "28d94acc0fce2bb5f04a88e928eb67d17c1fc7b541e177e3433b54674b49a1d0",
+        "signature": "c6e17a71f8cffc8bb352a01cedd3192e00cf71e1328f545c821666c3d258419c"
       },
       "../src/utils/file-json.utils.ts": {
-        "version": "956825784c48e31daa4ac353aa2d2f648145eee97f5238d54da3fa0782c72f92",
-        "signature": "faf00b88a3e2250ede5b2dddcd3b2f737d9436e14fd127ba9b3f808815e760bf"
+        "version": "57047103b87443a15e4bd9f0ec8d5eb76ec1de525c9bbc797b32a77689e6d1f9",
+        "signature": "9090ae35c232d6238396bc129a6bdd1071f9bbd08c91a1b24df995867fbf60ad"
       },
-      "../src/news/news.service.ts": {
-        "version": "650e6b7f00d7e079b0ed5a53554266497a893179a54dbcf2f8f71ac8f6231f06",
-        "signature": "eda5945ba553dea997dfd50d9fe645ca6e1cf828f1472ab70b239f5600e56ab8"
+      "../src/stories/stories.service.ts": {
+        "version": "1eade46ed6abeb02da86014844bdc451c583962114a06fad5eabb1fb8f59576c",
+        "signature": "87ab31c0e2eaa6facb255132ef7c883970242cb01000a3ea9c0644da4b0382bf"
       },
-      "../src/news/news.controller.ts": {
-        "version": "f32bfda52d25913fa62c22cfb181d0d207850f4c6f8d8d601a14042d90744fc3",
-        "signature": "75aad61ffe78ac084e87d7992d29ff21af6de5cd6e0f8f3fc2c6c6d990abe094"
+      "../src/stories/stories.controller.ts": {
+        "version": "673b827e188e3a5a527f240261b69a2feafcec8061f014c6ec65d5e48f96b216",
+        "signature": "a85aaf14f6ac3e2b09ecdabf396f697c1ac2d29f16d0bb0c018da2051316c03b"
       },
-      "../src/news/schemas/news.schema.ts": {
-        "version": "fefabd51cb156dc5e2c629c448e353fbb94240ae89bc5ca1565d4488c9b5d36c",
-        "signature": "e35f5adb9239f626c2c8f29e3198cc17ccab43bd0920fbb3423f0221368ffadf"
+      "../src/stories/schemas/stories.schema.ts": {
+        "version": "5b8b8df9f7a119a9814461a87d71296f4051389fdc8b0cba33a895c31a0b36c4",
+        "signature": "541ac781008ed33e87e6298495860ba4328dfe373f007dda31e0b9fe311b4ca1"
       },
-      "../src/news/news.module.ts": {
-        "version": "ca47eaf6a9ea79053c48c943b1fda6f3723ab88d35a289086c2a4acebc64b459",
-        "signature": "1c53868a04873adbddfd4717cb06b4bbc166d9f86688a4fdc40a654ca172ea8b"
+      "../src/stories/stories.module.ts": {
+        "version": "f815028b1c91ba07b6dfed5125ce492ef92b4e1d5b438643fb3a5be4bd01267e",
+        "signature": "aeff37adc185759b787b5070401bc71790f16c06c4d21435626058a33990768f"
       },
       "../src/app.module.ts": {
-        "version": "e4dbaaeb0dcf50cb3cd52fdf1a2ec88c152f19ef508ca54ee3ed63e1c25de410",
+        "version": "b866a06415dd3863b4c2dabec52ceb16259d6ac271042c8fd7bccc62d11c9b47",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "../node_modules/@nestjs/core/adapters/index.d.ts": {
@@ -7157,7 +7157,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/news/dto/news.dto.ts": [
+      "../src/stories/dto/stories.dto.ts": [
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/class-transformer/index.d.ts",
@@ -7166,7 +7166,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/news/interfaces/news.interface.ts": [
+      "../src/stories/interfaces/stories.interface.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7178,40 +7178,40 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/news/news.service.ts": [
+      "../src/stories/stories.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/news/interfaces/news.interface.ts",
+        "../src/stories/interfaces/stories.interface.ts",
         "../src/utils/file-json.utils.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/news/news.controller.ts": [
+      "../src/stories/stories.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/passport/index.d.ts",
-        "../src/news/dto/news.dto.ts",
-        "../src/news/news.service.ts",
-        "../src/news/interfaces/news.interface.ts",
+        "../src/stories/dto/stories.dto.ts",
+        "../src/stories/stories.service.ts",
+        "../src/stories/interfaces/stories.interface.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/news/schemas/news.schema.ts": [
+      "../src/stories/schemas/stories.schema.ts": [
         "../node_modules/@types/uuid/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/news/news.module.ts": [
+      "../src/stories/stories.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/news/news.controller.ts",
-        "../src/news/news.service.ts",
-        "../src/news/schemas/news.schema.ts",
+        "../src/stories/stories.controller.ts",
+        "../src/stories/stories.service.ts",
+        "../src/stories/schemas/stories.schema.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7229,7 +7229,7 @@
         "../src/users/users.module.ts",
         "../src/sections/sections.module.ts",
         "../src/modules/modules.module.ts",
-        "../src/news/news.module.ts",
+        "../src/stories/stories.module.ts",
         "../src/config/keys.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -12042,13 +12042,13 @@
         "../src/modules/modules.service.ts",
         "../src/modules/interfaces/module.interface.ts"
       ],
-      "../src/news/news.service.ts": [
-        "../src/news/interfaces/news.interface.ts"
+      "../src/stories/stories.service.ts": [
+        "../src/stories/interfaces/stories.interface.ts"
       ],
-      "../src/news/news.controller.ts": [
-        "../src/news/news.service.ts",
-        "../src/news/interfaces/news.interface.ts",
-        "../src/news/dto/news.dto.ts"
+      "../src/stories/stories.controller.ts": [
+        "../src/stories/stories.service.ts",
+        "../src/stories/interfaces/stories.interface.ts",
+        "../src/stories/dto/stories.dto.ts"
       ],
       "../node_modules/@nestjs/core/adapters/index.d.ts": [
         "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -13109,13 +13109,10 @@
       "../src/modules/modules.controller.ts",
       "../src/modules/schemas/module.schema.ts",
       "../src/modules/modules.module.ts",
-      "../src/news/dto/news.dto.ts",
+      "../src/stories/dto/stories.dto.ts",
+      "../src/stories/interfaces/stories.interface.ts",
       "../src/utils/file-json.utils.ts",
-      "../src/news/news.service.ts",
-      "../src/news/news.controller.ts",
-      "../src/news/schemas/news.schema.ts",
-      "../src/news/news.module.ts",
-      "../src/app.module.ts",
+      "../src/stories/schemas/stories.schema.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
       "../node_modules/@nestjs/core/application-config.d.ts",
@@ -13180,7 +13177,10 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/news/interfaces/news.interface.ts"
+      "../src/stories/stories.service.ts",
+      "../src/stories/stories.module.ts",
+      "../src/stories/stories.controller.ts",
+      "../src/app.module.ts"
     ]
   },
   "version": "3.7.2"

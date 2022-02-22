@@ -1,4 +1,4 @@
-export class News {
+export class Story {
   _id?: string;
   date?: Date;
   status: string;

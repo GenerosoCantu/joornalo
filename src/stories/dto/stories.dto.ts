@@ -3,7 +3,7 @@ import { IsString, IsInt, IsNotEmpty, IsBoolean } from 'class-validator';
 import { Exclude } from 'class-transformer';
 import { classToPlain } from 'class-transformer';
 
-export class NewsDto {
+export class StoryDto {
 
   // @IsString()
   // @IsNotEmpty()

@@ -1,20 +1,20 @@
 import { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { News } from './interfaces/news.interface'
-import { createNewsJsonFile } from '../utils/file-json.utils';
+import { Story } from './interfaces/Stories.interface'
+import { createStoryJsonFile } from '../utils/file-json.utils';
 // import * as fs from 'fs';
 
 @Injectable()
-export class NewsService {
+export class StoriesService {
   constructor(
-    @InjectModel('News') private readonly newsModel: Model<News>
+    @InjectModel('Story') private readonly storyModel: Model<Story>
   ) { }
 
   async findAll(page: number = 0, limit: number = 10, section, status, sortBy = 'date', sortOrder = '-1', date = null): Promise<any> {
     // title search index TBD
-    // return await this.newsModel.find();
-    // http://localhost:4000/news/?page=0&limit=5&section=international&status=Pending&sortBy=date&sortOrder=-1&date=12/1/2021
+    // return await this.storyModel.find();
+    // http://localhost:4000/story/?page=0&limit=5&section=international&status=Pending&sortBy=date&sortOrder=-1&date=12/1/2021
 
     const match = {
       ...(section && { section }),
@@ -24,7 +24,7 @@ export class NewsService {
 
     const skip = page * limit
 
-    const response = await this.newsModel.aggregate([
+    const response = await this.storyModel.aggregate([
       { $match: match },
       { '$sort': { 'date': sortOrder === '1' ? 1 : -1 } },
       {
@@ -49,27 +49,27 @@ export class NewsService {
     }
   }
 
-  async findOne(id: string): Promise<News> {
+  async findOne(id: string): Promise<Story> {
     console.log('findOne:', id);
-    return await this.newsModel.findOne({ _id: id });
+    return await this.storyModel.findOne({ _id: id });
   }
 
-  // async findNews(email: string): Promise<News> {
-  //   return await this.newsModel.findOne({ email: email });
+  // async findStory(email: string): Promise<Story> {
+  //   return await this.storyModel.findOne({ email: email });
   // }
 
-  async create(news: News): Promise<News> {
-    const newNews = new this.newsModel(news);
-    createNewsJsonFile('data/news/', newNews['_id'], newNews);
-    return await newNews.save();
+  async create(story: Story): Promise<Story> {
+    const newStory = new this.storyModel(story);
+    createStoryJsonFile('data/story/', newStory['_id'], newStory);
+    return await newStory.save();
   }
 
-  async update(id: string, news: News): Promise<News> {
-    return await this.newsModel.findByIdAndUpdate(id, news, { new: true, useFindAndModify: false });
+  async update(id: string, story: Story): Promise<Story> {
+    return await this.storyModel.findByIdAndUpdate(id, story, { new: true, useFindAndModify: false });
   }
 
-  async delete(id: string): Promise<News> {
-    return await this.newsModel.findByIdAndRemove(id);
+  async delete(id: string): Promise<Story> {
+    return await this.storyModel.findByIdAndRemove(id);
   }
 
 }

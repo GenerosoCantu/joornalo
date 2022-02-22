@@ -15,13 +15,13 @@ const auth_module_1 = require("./auth/auth.module");
 const users_module_1 = require("./users/users.module");
 const sections_module_1 = require("./sections/sections.module");
 const modules_module_1 = require("./modules/modules.module");
-const news_module_1 = require("./news/news.module");
+const stories_module_1 = require("./stories/stories.module");
 const keys_1 = require("./config/keys");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [mongoose_1.MongooseModule.forRoot(keys_1.default.mongoURI), auth_module_1.AuthModule, users_module_1.UsersModule, sections_module_1.SectionsModule, modules_module_1.ModulesModule, news_module_1.NewsModule, covers_module_1.CoversModule, items_module_1.ItemsModule, files_module_1.FilesModule],
+        imports: [mongoose_1.MongooseModule.forRoot(keys_1.default.mongoURI), auth_module_1.AuthModule, users_module_1.UsersModule, sections_module_1.SectionsModule, modules_module_1.ModulesModule, stories_module_1.StoriesModule, covers_module_1.CoversModule, items_module_1.ItemsModule, files_module_1.FilesModule],
     })
 ], AppModule);
 exports.AppModule = AppModule;

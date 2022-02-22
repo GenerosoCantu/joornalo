@@ -6,7 +6,7 @@ export const createJsonFile = (path, fileName, obj) => {
   });
 }
 
-export const createNewsJsonFile = (path, fileName, obj) => {
+export const createStoryJsonFile = (path, fileName, obj) => {
   const folders = fileName.split('');
   const newPath = path + folders[0] + '/' + folders[1] + '/'
   console.log(newPath);

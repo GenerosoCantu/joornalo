@@ -9,10 +9,10 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { SectionsModule } from './sections/sections.module';
 import { ModulesModule } from './modules/modules.module';
-import { NewsModule } from './news/news.module';
+import { StoriesModule } from './stories/stories.module';
 import config from './config/keys'
 @Module({
-  imports: [MongooseModule.forRoot(config.mongoURI), AuthModule, UsersModule, SectionsModule, ModulesModule, NewsModule, CoversModule, ItemsModule, FilesModule],
+  imports: [MongooseModule.forRoot(config.mongoURI), AuthModule, UsersModule, SectionsModule, ModulesModule, StoriesModule, CoversModule, ItemsModule, FilesModule],
   // controllers: [AppController],
   // providers: [AppService],
 })

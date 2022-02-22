@@ -1,7 +1,7 @@
 import * as mongoose from 'mongoose';
 import { v4 as uuid } from 'uuid';
 
-export const NewsSchema = new mongoose.Schema({
+export const StorySchema = new mongoose.Schema({
   _id: {
     type: String,
     index: true,
