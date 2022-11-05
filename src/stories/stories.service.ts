@@ -3,6 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Story } from './interfaces/Stories.interface'
 import { createStoryJsonFile } from '../utils/file-json.utils';
+import { CoversModule } from 'src/covers/covers.module';
 // import * as fs from 'fs';
 
 @Injectable()
@@ -65,7 +66,10 @@ export class StoriesService {
   }
 
   async update(id: string, story: Story): Promise<Story> {
-    return await this.storyModel.findByIdAndUpdate(id, story, { new: true, useFindAndModify: false });
+    // createStoryJsonFile('data/story/', story['_id'], story);
+    console.log('story--------------------------')
+    console.log(story)
+    return await this.storyModel.findByIdAndUpdate(id, story, { new: true });
   }
 
   async delete(id: string): Promise<Story> {

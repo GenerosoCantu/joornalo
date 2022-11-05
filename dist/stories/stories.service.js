@@ -17,6 +17,7 @@ const mongoose_1 = require("mongoose");
 const common_1 = require("@nestjs/common");
 const mongoose_2 = require("@nestjs/mongoose");
 const file_json_utils_1 = require("../utils/file-json.utils");
+const covers_module_1 = require("../covers/covers.module");
 let StoriesService = class StoriesService {
     constructor(storyModel) {
         this.storyModel = storyModel;
@@ -57,7 +58,9 @@ let StoriesService = class StoriesService {
         return await newStory.save();
     }
     async update(id, story) {
-        return await this.storyModel.findByIdAndUpdate(id, story, { new: true, useFindAndModify: false });
+        console.log('story--------------------------');
+        console.log(story);
+        return await this.storyModel.findByIdAndUpdate(id, story, { new: true });
     }
     async delete(id) {
         return await this.storyModel.findByIdAndRemove(id);

@@ -18,7 +18,7 @@ exports.StorySchema = new mongoose.Schema({
         default: 'Pending'
     },
     section: String,
-    subsections: String,
+    subsection: String,
     title: String,
     desc: String,
     text: String,

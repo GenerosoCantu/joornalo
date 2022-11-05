@@ -22,7 +22,7 @@ export class StoryDto {
 
   @IsString()
   @ApiModelProperty()
-  readonly subsections: string;
+  readonly subsection: string;
 
   @IsString()
   @IsNotEmpty()

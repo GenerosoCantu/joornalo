@@ -1,7 +1,7 @@
 export declare class StoryDto {
     readonly status: string;
     readonly section: string;
-    readonly subsections: string;
+    readonly subsection: string;
     readonly title: string;
     readonly desc: string;
     readonly text: string;

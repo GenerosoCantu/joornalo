@@ -2254,19 +2254,19 @@
         "signature": "51f83f5fe6c6b91982753b3638d7a32bffb432038d4b45a1ec417e92b64d1f16"
       },
       "../src/stories/dto/stories.dto.ts": {
-        "version": "beb2496ee1a054c097c84ca40910f636988b22ba9a0e14a6b7ed11a152267b13",
-        "signature": "cbfdab6b6be3a074560f22e9e25875ddf839b6da69d25271e32fba32a5357ac0"
+        "version": "c0f596fe5daacacdd35a7a1c6071c422b02a094b39fa061c3040522bd4f68041",
+        "signature": "11a81f936b6d930603a707d26607f4a44e493798978f5b4f54aaa98b9e8697ac"
       },
       "../src/stories/interfaces/stories.interface.ts": {
-        "version": "28d94acc0fce2bb5f04a88e928eb67d17c1fc7b541e177e3433b54674b49a1d0",
-        "signature": "c6e17a71f8cffc8bb352a01cedd3192e00cf71e1328f545c821666c3d258419c"
+        "version": "d653b10c180fb47e0b9b4d8168e4966afa5b6e213243f2724a0e1909c2e15088",
+        "signature": "43a9ef882ab880c0f6578774011c19816918785c2b8f4eafad6ae8df775bda55"
       },
       "../src/utils/file-json.utils.ts": {
         "version": "57047103b87443a15e4bd9f0ec8d5eb76ec1de525c9bbc797b32a77689e6d1f9",
         "signature": "9090ae35c232d6238396bc129a6bdd1071f9bbd08c91a1b24df995867fbf60ad"
       },
       "../src/stories/stories.service.ts": {
-        "version": "1eade46ed6abeb02da86014844bdc451c583962114a06fad5eabb1fb8f59576c",
+        "version": "460b037bceb0e0e3397a1cd0129da7594cfdcb664d05b4663075b71ba603b723",
         "signature": "87ab31c0e2eaa6facb255132ef7c883970242cb01000a3ea9c0644da4b0382bf"
       },
       "../src/stories/stories.controller.ts": {
@@ -2274,7 +2274,7 @@
         "signature": "a85aaf14f6ac3e2b09ecdabf396f697c1ac2d29f16d0bb0c018da2051316c03b"
       },
       "../src/stories/schemas/stories.schema.ts": {
-        "version": "5b8b8df9f7a119a9814461a87d71296f4051389fdc8b0cba33a895c31a0b36c4",
+        "version": "422abf80e19d42b7c0831caab14dea957a20939b8386464cd1e768ba7a676808",
         "signature": "541ac781008ed33e87e6298495860ba4328dfe373f007dda31e0b9fe311b4ca1"
       },
       "../src/stories/stories.module.ts": {
@@ -7183,6 +7183,7 @@
         "../node_modules/@nestjs/mongoose/index.d.ts",
         "../src/stories/interfaces/stories.interface.ts",
         "../src/utils/file-json.utils.ts",
+        "../src/covers/covers.module.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -13112,7 +13113,10 @@
       "../src/stories/dto/stories.dto.ts",
       "../src/stories/interfaces/stories.interface.ts",
       "../src/utils/file-json.utils.ts",
-      "../src/stories/schemas/stories.schema.ts",
+      "../src/stories/stories.service.ts",
+      "../src/stories/stories.controller.ts",
+      "../src/stories/stories.module.ts",
+      "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
       "../node_modules/@nestjs/core/application-config.d.ts",
@@ -13177,10 +13181,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/stories/stories.service.ts",
-      "../src/stories/stories.module.ts",
-      "../src/stories/stories.controller.ts",
-      "../src/app.module.ts"
+      "../src/stories/schemas/stories.schema.ts"
     ]
   },
   "version": "3.7.2"

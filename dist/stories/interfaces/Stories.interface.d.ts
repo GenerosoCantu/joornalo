@@ -3,7 +3,7 @@ export declare class Story {
     date?: Date;
     status: string;
     section: string;
-    subsections?: string;
+    subsection?: string;
     title: string;
     desc: string;
     text: string;

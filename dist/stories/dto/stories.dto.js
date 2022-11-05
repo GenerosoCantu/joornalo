@@ -33,7 +33,7 @@ __decorate([
     class_validator_1.IsString(),
     swagger_1.ApiModelProperty(),
     __metadata("design:type", String)
-], StoryDto.prototype, "subsections", void 0);
+], StoryDto.prototype, "subsection", void 0);
 __decorate([
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
