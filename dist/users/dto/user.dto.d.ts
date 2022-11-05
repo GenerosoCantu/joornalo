@@ -13,7 +13,7 @@ export declare class UserDto {
     readonly status: string;
     readonly sections: string[];
     readonly modules: string[];
-    toJSON(): Object;
+    toJSON(): Record<string, any>;
 }
 export declare class PermissionsDto {
     readonly permissions: string[];

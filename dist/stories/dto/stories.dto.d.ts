@@ -8,5 +8,5 @@ export declare class StoryDto {
     readonly images: string[];
     readonly embed: string[];
     readonly quotes: string[];
-    toJSON(): Object;
+    toJSON(): Record<string, any>;
 }
