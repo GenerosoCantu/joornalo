@@ -4,3 +4,6 @@ export interface Item {
     description?: string;
     qty: number;
 }
+export interface FileName {
+    file: string;
+}

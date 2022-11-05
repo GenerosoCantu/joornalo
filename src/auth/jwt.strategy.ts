@@ -15,10 +15,10 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   }
 
   async validate(payload: any) {
-    console.log('******************************');
+    console.log('JwtStrategy validate ******************************');
     console.log(payload);
     const valid = await this.authService.validateSession('okokok');
     //console.log(ExtractJwt.fromAuthHeaderAsBearerToken);
-    return { userId: payload.sub, username: payload.username };
+    return { userId: payload.sub, email: payload.email };
   }
 }

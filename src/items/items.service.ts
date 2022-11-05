@@ -1,7 +1,7 @@
 import { Model } from 'mongoose';
 import { Injectable, HttpService, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Item } from './interfaces/item.interface'
+import { Item, FileName } from './interfaces/item.interface'
 import { map } from 'rxjs/operators';
 import * as config from 'config';
 import { Storage } from '@google-cloud/storage';
@@ -66,10 +66,13 @@ export class ItemsService {
   }
 
   async uploadFile(file) {
+    console.log('filename: ', file[0]);
+    console.log('filename: ', file[0].filename);
     fs.rename('data/tmp/' + file[0].filename, 'data/b/' + file[0].originalname, (err) => {
       if (err) throw err;
       fs.unlink('data/tmp/' + file[0].filename, (err) => {
-        if (err) throw err;
+        // if (err) throw err;
+        console.log('originalname: ', file[0].originalname);
         console.log('Download complete!');
         return { file: file[0].originalname };
       });

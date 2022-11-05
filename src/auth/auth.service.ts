@@ -11,8 +11,8 @@ export class AuthService {
     private readonly jwtService: JwtService
   ) { }
 
-  async validateUser(username: string, pass: string): Promise<any> {
-    let user = await this.usersService.findUser(username);
+  async validateUser(email: string, pass: string): Promise<any> {
+    let user = await this.usersService.findUser(email);
     if (user && user.password === pass && !user.locked) {
       return user;
     }
@@ -30,25 +30,45 @@ export class AuthService {
   }
 
   async login(user: any) {
-    const payload = { username: user.username, sub: user['_id'] };
+    console.log('user::::::::::::');
+    console.log(user);
+    const payload = { email: user.email, sub: user['_id'] };
     let token = this.jwtService.sign(payload);
-    this.sessions[user.username] = token;
-    console.log('---------------------------------');
-    console.log(this.sessions);
+    this.sessions[user.email] = token;
     return {
-      access_token: token,
+      user: this.buildUser(user),
+      accessToken: token,
     };
   }
 
   async validateSession(token: any) {
-    console.log('validateSession-----------------------');
-    for (let [username, validToken] of Object.entries(this.sessions)) {
-      console.log(`${username}: ${validToken}`);
+    for (let [email, validToken] of Object.entries(this.sessions)) {
+      console.log(`${email}: ${validToken}`);
       if (validToken == token) {
         return true;
       }
       return false;
     }
-    //return (this.sessions[username] = token);
+    //return (this.sessions[email] = token);
   }
+
+  private buildUser(user: any) {
+    const userRO = {
+      _id: user.id,
+      email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      phone: user.phone,
+      role: user.role,
+      reg_time: user.reg_time,
+      login_fail: user.login_fail,
+      locked: user.locked,
+      verified: user.verified,
+      status: user.status,
+      modules: user.modules,
+      sections: user.sections
+    };
+    return userRO;
+  }
+
 }

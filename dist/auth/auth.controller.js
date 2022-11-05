@@ -25,14 +25,14 @@ let AuthController = class AuthController {
 };
 __decorate([
     common_1.UseGuards(passport_1.AuthGuard('local')),
-    common_1.Post('login'),
+    common_1.Post(),
     __param(0, common_1.Request()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], AuthController.prototype, "login", null);
 AuthController = __decorate([
-    common_1.Controller('auth'),
+    common_1.Controller('login'),
     __metadata("design:paramtypes", [auth_service_1.AuthService])
 ], AuthController);
 exports.AuthController = AuthController;

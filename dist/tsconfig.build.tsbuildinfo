@@ -1330,8 +1330,8 @@
         "signature": "9cebab89871446e2e9f2c8599cb22696c08207cf5bc21adb8f9752d582c5055e"
       },
       "../src/items/interfaces/item.interface.ts": {
-        "version": "41af19fbdb3f3ef828264f20e3cc002e2168042cf504c6f587236b8fc9729a5b",
-        "signature": "fcaae635a7493777db0ac58d2e0ddbe61f5a18ac46a1af3e7d5929e74d91b0bc"
+        "version": "76336dd443f826059fc66c91b00cf94d5b32cbc14c610c8b0b3e7f6c2cb97292",
+        "signature": "e164beac715d52edd57d621136e89155d4991ee8133f52f8501fafb8e06f4fb8"
       },
       "../node_modules/rxjs/internal/operators/audit.d.ts": {
         "version": "fe936a68d281ccc2060f8c3de69a0682a807c8fd1b8abccc0a91b83195ca0f94",
@@ -1886,7 +1886,7 @@
         "signature": "076c9f26394e19e834f74eb53f87a8242c0d9ba05c47e63a873907f9a111a183"
       },
       "../src/items/items.service.ts": {
-        "version": "5180a7b802b84b86cc5c4534bcfce969ee2a88b570a31162a36bba463362fd87",
+        "version": "ad7f7bc514cff6486a81a726cc1e2e210e6e6b386a97ed7cdcb45ec2924aa915",
         "signature": "39a1dd47e3a9e94cabe14a46e2cd51ffa6949a5a8f26729b64247eaca0812902"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -1957,9 +1957,13 @@
         "version": "e3cd60be3c4f95c43420be67eaa21637585b7c1a8129f9b39983bbd294f9513c",
         "signature": "e3cd60be3c4f95c43420be67eaa21637585b7c1a8129f9b39983bbd294f9513c"
       },
+      "../src/utils/file-upload.utils.ts": {
+        "version": "ae75ae654eab9b5a51784ed69c1c751b64d51fd03097ee50ded5ee429fc4320d",
+        "signature": "0aab5a5d56db6d9591f2b8c4415d74a5f6a8f8be1d688389ed6f3dbcfa44ec91"
+      },
       "../src/items/items.controller.ts": {
-        "version": "bcd1cac68acd20ccc87e61b84f01c6f50f4d63e307a050acb72897647ca2d729",
-        "signature": "ff103cab98a6da24638520511f47c5a898f69f9c9d0aa7ea071d2c564e196604"
+        "version": "10b2ca839478fda984584feae96a57cf9dc5537c13005d83b69846bb513f6174",
+        "signature": "cb6106a2528de55d3c0daee2e0d82b28e5f4c59b1799f76840c6b7d9a42adfc1"
       },
       "../node_modules/@types/uuid/interfaces.d.ts": {
         "version": "1ea35410428b662835f11e9df76672cb8b76c37807c4593df59a0f40d76cf137",
@@ -1977,13 +1981,161 @@
         "version": "0a038c7be882dd411c6ee5ed172a6b9eaed54c19df23dea0f3b0d778c31d4095",
         "signature": "fc7cc18a8e5feb041bb7ba0e24175c89f34c30177a7266e5848e7c4017fac034"
       },
+      "../src/files/files.service.ts": {
+        "version": "8eb2a22a6675a5a63bac2eb2a87d18db277e6e0662cebad5eb42874fc5add482",
+        "signature": "4582847131fc99b97b9a4e44c88038094c26864a6d1df29d0bb2e1e8748f5a4b"
+      },
+      "../src/files/files.controller.ts": {
+        "version": "b9b270b30e112d85115447b30d73ee8c2ff1d3929eb302c1d7ca7ee0fa599081",
+        "signature": "c4ce22e1c16b4168ec9e10b36b7de75ad0f504fdf13ebf2b82ef89887d7898b9"
+      },
+      "../src/files/files.module.ts": {
+        "version": "0dcbf9b8ae4cf3610f542735bea3cc2e12685072186d2dd9a72813d5e916c600",
+        "signature": "3a86ac7f72f5e69f56d0ce8eda8ea581bb2301e2bea6c1f277f2935253089181"
+      },
+      "../src/covers/dto/create-cover.dto.ts": {
+        "version": "79f1641ed9692df9cfeb88e1a819768cf48c3675ca014ae984efb17747ae26ec",
+        "signature": "1ba2ea5a4d5e79ae8e9a0899879b8cac387c84a4a2937a1c61404667003d38d9"
+      },
+      "../src/covers/interfaces/cover.interface.ts": {
+        "version": "427e5302baafa9dafd0a145287995697adb02704312e411ad19fa933e8b66d32",
+        "signature": "091fd4db267948bf8d7efe20f7224b04a831b725d03e964c068b3b67b3b7841f"
+      },
+      "../src/covers/covers.service.ts": {
+        "version": "3d9328e362e1adfeae407a988206e10c020f3272d8461334c28527b2bb5fdfa3",
+        "signature": "71519940758b1cdca4f0eed82ed9b65882cf810f4683fe8b2573313597cb4894"
+      },
+      "../src/covers/covers.controller.ts": {
+        "version": "7af620e0894be0e95b801fd1584606a1027bacecaa5b6a4c5b92978d7dcf2bc1",
+        "signature": "ed3f9f44f82510a2b462725f309b2cfb0143ce2a42780d433df84ba0a701dfd6"
+      },
+      "../src/covers/schemas/cover.schema.ts": {
+        "version": "e5c5395727d7d66e729b72179f9695874d6840baa3e5a2929f17cb2beefd392b",
+        "signature": "d87fac4c6b2de75d99d465715f651772293d575e13c3f57f02bcac5b8267fc34"
+      },
+      "../src/covers/covers.module.ts": {
+        "version": "fc2755784d57fa0101592607f37a283f46344b29984bd5d06147de939b4dfdfd",
+        "signature": "f99dc81a9dcc3a5079e4b2d582792412f834d4d7bcc78abd14a92896a13b274e"
+      },
+      "../node_modules/class-transformer/types/interfaces/decorator-options/expose-options.interface.d.ts": {
+        "version": "b6e995b5ef6661f5636ff738e67e4ec90150768ef119ad74b473c404304408a1",
+        "signature": "b6e995b5ef6661f5636ff738e67e4ec90150768ef119ad74b473c404304408a1"
+      },
+      "../node_modules/class-transformer/types/interfaces/decorator-options/exclude-options.interface.d.ts": {
+        "version": "5d470930bf6142d7cbda81c157869024527dc7911ba55d90b8387ef6e1585aa1",
+        "signature": "5d470930bf6142d7cbda81c157869024527dc7911ba55d90b8387ef6e1585aa1"
+      },
+      "../node_modules/class-transformer/types/interfaces/decorator-options/transform-options.interface.d.ts": {
+        "version": "074483fdbf20b30bd450e54e6892e96ea093430c313e61be5fdfe51588baa2d6",
+        "signature": "074483fdbf20b30bd450e54e6892e96ea093430c313e61be5fdfe51588baa2d6"
+      },
+      "../node_modules/class-transformer/types/interfaces/decorator-options/type-discriminator-descriptor.interface.d.ts": {
+        "version": "b7e6a6a3495301360edb9e1474702db73d18be7803b3f5c6c05571212acccd16",
+        "signature": "b7e6a6a3495301360edb9e1474702db73d18be7803b3f5c6c05571212acccd16"
+      },
+      "../node_modules/class-transformer/types/interfaces/decorator-options/type-options.interface.d.ts": {
+        "version": "aa7527285c94043f21baf6e337bc60a92c20b6efaa90859473f6476954ac5f79",
+        "signature": "aa7527285c94043f21baf6e337bc60a92c20b6efaa90859473f6476954ac5f79"
+      },
+      "../node_modules/class-transformer/types/interfaces/metadata/exclude-metadata.interface.d.ts": {
+        "version": "dd3be6d9dcd79e46d192175a756546630f2dc89dab28073823c936557b977f26",
+        "signature": "dd3be6d9dcd79e46d192175a756546630f2dc89dab28073823c936557b977f26"
+      },
+      "../node_modules/class-transformer/types/interfaces/metadata/expose-metadata.interface.d.ts": {
+        "version": "8d0566152618a1da6536c75a5659c139522d67c63a9ae27e8228d76ab0420584",
+        "signature": "8d0566152618a1da6536c75a5659c139522d67c63a9ae27e8228d76ab0420584"
+      },
+      "../node_modules/class-transformer/types/enums/transformation-type.enum.d.ts": {
+        "version": "ba06bf784edafe0db0e2bd1f6ecf3465b81f6b1819871bf190a0e0137b5b7f18",
+        "signature": "ba06bf784edafe0db0e2bd1f6ecf3465b81f6b1819871bf190a0e0137b5b7f18"
+      },
+      "../node_modules/class-transformer/types/enums/index.d.ts": {
+        "version": "a0500233cb989bcb78f5f1a81f51eabc06b5c39e3042c560a7489f022f1f55a3",
+        "signature": "a0500233cb989bcb78f5f1a81f51eabc06b5c39e3042c560a7489f022f1f55a3"
+      },
+      "../node_modules/class-transformer/types/interfaces/target-map.interface.d.ts": {
+        "version": "220508b3fb6b773f49d8fb0765b04f90ef15caacf0f3d260e3412ed38f71ef09",
+        "signature": "220508b3fb6b773f49d8fb0765b04f90ef15caacf0f3d260e3412ed38f71ef09"
+      },
+      "../node_modules/class-transformer/types/interfaces/class-transformer-options.interface.d.ts": {
+        "version": "1ad113089ad5c188fec4c9a339cb53d1bcbb65682407d6937557bb23a6e1d4e5",
+        "signature": "1ad113089ad5c188fec4c9a339cb53d1bcbb65682407d6937557bb23a6e1d4e5"
+      },
+      "../node_modules/class-transformer/types/interfaces/metadata/transform-fn-params.interface.d.ts": {
+        "version": "e56427c055602078cbf0e58e815960541136388f4fc62554813575508def98b6",
+        "signature": "e56427c055602078cbf0e58e815960541136388f4fc62554813575508def98b6"
+      },
+      "../node_modules/class-transformer/types/interfaces/metadata/transform-metadata.interface.d.ts": {
+        "version": "1f58b0676a80db38df1ce19d15360c20ce9e983b35298a5d0b4aa4eb4fb67e0f",
+        "signature": "1f58b0676a80db38df1ce19d15360c20ce9e983b35298a5d0b4aa4eb4fb67e0f"
+      },
+      "../node_modules/class-transformer/types/interfaces/metadata/type-metadata.interface.d.ts": {
+        "version": "3d67e7eb73c6955ee27f1d845cae88923f75c8b0830d4b5440eea2339958e8ec",
+        "signature": "3d67e7eb73c6955ee27f1d845cae88923f75c8b0830d4b5440eea2339958e8ec"
+      },
+      "../node_modules/class-transformer/types/interfaces/class-constructor.type.d.ts": {
+        "version": "11fec302d58b56033ab07290a3abc29e9908e29d504db9468544b15c4cd7670d",
+        "signature": "11fec302d58b56033ab07290a3abc29e9908e29d504db9468544b15c4cd7670d"
+      },
+      "../node_modules/class-transformer/types/interfaces/type-help-options.interface.d.ts": {
+        "version": "c66d6817c931633650edf19a8644eea61aeeb84190c7219911cefa8ddea8bd9a",
+        "signature": "c66d6817c931633650edf19a8644eea61aeeb84190c7219911cefa8ddea8bd9a"
+      },
+      "../node_modules/class-transformer/types/interfaces/index.d.ts": {
+        "version": "ab1359707e4fc610c5f37f1488063af65cda3badca6b692d44b95e8380e0f6c2",
+        "signature": "ab1359707e4fc610c5f37f1488063af65cda3badca6b692d44b95e8380e0f6c2"
+      },
+      "../node_modules/class-transformer/types/classtransformer.d.ts": {
+        "version": "37deda160549729287645b3769cf126b0a17e7e2218737352676705a01d5957e",
+        "signature": "37deda160549729287645b3769cf126b0a17e7e2218737352676705a01d5957e"
+      },
+      "../node_modules/class-transformer/types/decorators/exclude.decorator.d.ts": {
+        "version": "d80ffdd55e7f4bc69cde66933582b8592d3736d3b0d1d8cc63995a7b2bcca579",
+        "signature": "d80ffdd55e7f4bc69cde66933582b8592d3736d3b0d1d8cc63995a7b2bcca579"
+      },
+      "../node_modules/class-transformer/types/decorators/expose.decorator.d.ts": {
+        "version": "c9b71952b2178e8737b63079dba30e1b29872240b122905cbaba756cb60b32f5",
+        "signature": "c9b71952b2178e8737b63079dba30e1b29872240b122905cbaba756cb60b32f5"
+      },
+      "../node_modules/class-transformer/types/decorators/transform-instance-to-instance.decorator.d.ts": {
+        "version": "b596585338b0d870f0e19e6b6bcbf024f76328f2c4f4e59745714e38ee9b0582",
+        "signature": "b596585338b0d870f0e19e6b6bcbf024f76328f2c4f4e59745714e38ee9b0582"
+      },
+      "../node_modules/class-transformer/types/decorators/transform-instance-to-plain.decorator.d.ts": {
+        "version": "e6717fc103dfa1635947bf2b41161b5e4f2fabbcaf555754cc1b4340ec4ca587",
+        "signature": "e6717fc103dfa1635947bf2b41161b5e4f2fabbcaf555754cc1b4340ec4ca587"
+      },
+      "../node_modules/class-transformer/types/decorators/transform-plain-to-instance.decorator.d.ts": {
+        "version": "c36186d7bdf1f525b7685ee5bf639e4b157b1e803a70c25f234d4762496f771f",
+        "signature": "c36186d7bdf1f525b7685ee5bf639e4b157b1e803a70c25f234d4762496f771f"
+      },
+      "../node_modules/class-transformer/types/decorators/transform.decorator.d.ts": {
+        "version": "026726932a4964341ab8544f12b912c8dfaa388d2936b71cc3eca0cffb49cc1d",
+        "signature": "026726932a4964341ab8544f12b912c8dfaa388d2936b71cc3eca0cffb49cc1d"
+      },
+      "../node_modules/class-transformer/types/decorators/type.decorator.d.ts": {
+        "version": "83188d037c81bd27076218934ba9e1742ddb69cd8cc64cdb8a554078de38eb12",
+        "signature": "83188d037c81bd27076218934ba9e1742ddb69cd8cc64cdb8a554078de38eb12"
+      },
+      "../node_modules/class-transformer/types/decorators/index.d.ts": {
+        "version": "7d82f2d6a89f07c46c7e3e9071ab890124f95931d9c999ba8f865fa6ef6cbf72",
+        "signature": "7d82f2d6a89f07c46c7e3e9071ab890124f95931d9c999ba8f865fa6ef6cbf72"
+      },
+      "../node_modules/class-transformer/types/index.d.ts": {
+        "version": "4fc523037d14d9bb6ddb586621a93dd05b6c6d8d59919a40c436ca3ac29d9716",
+        "signature": "4fc523037d14d9bb6ddb586621a93dd05b6c6d8d59919a40c436ca3ac29d9716"
+      },
       "../src/users/interfaces/user.interface.ts": {
-        "version": "8ea9218824291bbb65574a70d18ea011e8f5fbb3447ecafe8354146810694107",
-        "signature": "27c6853fb4b1c9a41a8206bfe9d6fe5d8fa69b5998656bfdc5cad3d8d6346a93"
+        "version": "fe2dd344925008b80edeea9b4e1533516a30eabcef51b6e556948b4e609ffb32",
+        "signature": "e575cd588712b798168fc9d076bc8e3979c11cde479c5fa0566389f1472a908a"
+      },
+      "../node_modules/@types/hapi__joi/index.d.ts": {
+        "version": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5",
+        "signature": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5"
       },
       "../src/users/users.service.ts": {
-        "version": "9b7b74721dd29a9229c7eda33add98b9d421f3f9d130a407d0db33e88ec156dd",
-        "signature": "32d2519d601d74c49850621190f62256c7e75dc4bc6676d7697722f1a3a2a292"
+        "version": "64deb8644e8d0173a0617b45e2c9d3b566a86205373a550519930229d54df1f8",
+        "signature": "613515cbdc306ee17406da0221dbe739030d201f33a251c5d146d6ce74f3244f"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
         "version": "3ee1c4479498ce568cf7789174c181a68a7f7f16f7b338132ded0daf24a8a971",
@@ -2014,8 +2166,8 @@
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
       "../src/auth/auth.service.ts": {
-        "version": "6f287d670aa0fc7d2e1b2cba7b7f0f80a8c0b27af4328bbdaa6039f6a917989f",
-        "signature": "4cbff79f594c599cbb2551bf71544e1b56f5f15d6644e9e4bfd2d172c05baf24"
+        "version": "f5da2e190152747e2526bdf28d2860fcc5e7db5fb1c4fe096a12ac4954c9fb3a",
+        "signature": "7d7c26fdec75e789486ee9c6b7a0f8fdd36f375381fcea96134d69349d541010"
       },
       "../node_modules/@types/range-parser/index.d.ts": {
         "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
@@ -2098,8 +2250,8 @@
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
       "../src/auth/local.strategy.ts": {
-        "version": "58f331f70e71803d11f460276c3139b5138ff48644d0d73d5155eae94cbf81c1",
-        "signature": "4d65c1cf2c61e430987e82fb595ba2d45d5bc5d29c05ee7ab57c081f60e1a875"
+        "version": "2c280fe443b8eb4558e093c895981504046f198c9eb2cb4d4ac88e11bfd0ba83",
+        "signature": "c882f6cb2cfb1ddd7efe23f2cb523bc54da9571ec9cd2d56ff3273a168ea4b98"
       },
       "../node_modules/@types/passport-jwt/index.d.ts": {
         "version": "d306be26f96b4bd9b279cd7da9d1355d5ce4060a2bb254489c1b95c87057eb38",
@@ -2110,19 +2262,19 @@
         "signature": "24fa20d394d1fe3d519e1c29521c1879d7c06370bce8d59702ef6fef31cea97f"
       },
       "../src/auth/jwt.strategy.ts": {
-        "version": "8fca73b1f6ef1f6f2e2ca1352a08e6f86896be149084c919352eb1fd14f344a7",
-        "signature": "4492eb152ce552973e2061e53c83344577652e7daaa0748d318c518c6d869ab9"
+        "version": "801ca650603fb5ae0003377cf519a084062492d8071ce5f39421ed3cd49b3e45",
+        "signature": "413f220b1fe4553f4d3f7b938fc0cb4b10955d72f3792d60fcecc0efee5718c0"
       },
       "../src/users/dto/user.dto.ts": {
-        "version": "92002eba71d958d3a5dd3f5b39f2d98acf9217263af053e34afac19b6bc15ce2",
-        "signature": "16e67b08d6052a6323091e74139873eef33c5d4b306bd7d890b4c6873e42d452"
+        "version": "5e1ac39622dd5f24e7cdf4605de2bfa52e11e3222f78ad1989338b8ea3ea0675",
+        "signature": "39617f4da9f47e28a99d2530b39f8024994b8c35fd6e5313f010bc0e96f72f5a"
       },
       "../src/users/users.controller.ts": {
-        "version": "3e3d1891cd86473a51243e049f20cc8a643d3dfc4867e396b57093fd1afa568b",
-        "signature": "d9ee42e971dbd86b35a783ade64b41b3e7bc872be4d263a263554efb492077bd"
+        "version": "2f670677019dbd7d16e84735884cc9fca32d624d882a44675bfcbac1b7043740",
+        "signature": "e84c7cd0f6be584ed05364fff846c97543279e2e65f395dc7a45a22a406ca003"
       },
       "../src/users/schemas/user.schema.ts": {
-        "version": "02d1d68110328a5f642b82436be8c6e8ae6b3fe6207aa73b4f8d8b5246cf28f5",
+        "version": "4e3b21ba1748d22c1e30292f5e715334cbcee506c8ef9c69dcdabf0ecf459768",
         "signature": "88f96d37ada87eef41cd30e9d76e32fb1cdaf8ccc3201d0d0eff37ca03fd8d3c"
       },
       "../src/users/users.module.ts": {
@@ -2130,15 +2282,87 @@
         "signature": "12dec6c99bd8d11167fa91a31e737abbbf8c9cc789c151a25a9a1d13f328175c"
       },
       "../src/auth/auth.controller.ts": {
-        "version": "da56fa078f3ea67232737a27a8aeaf26681758800259a397d2afdaa748804b73",
-        "signature": "bd2ec8e4036fbafd75720f831bbb5d4cfdd363d06dee4eb62442812ed03b5066"
+        "version": "0bbf88f9205f023c956895a4526b3af1e6e7d0e90be33730fc2ef297c29920a2",
+        "signature": "63174b5de357732d265a0c1a401dbec02966412d6ca4b8c13e226b93a715bc1d"
       },
       "../src/auth/auth.module.ts": {
         "version": "dc34c5b152b30507e4068005e9fc5d3202abae1bf1d6bfa8027cd9efdf9fd0c7",
         "signature": "2e5d258cf85349b02b015c3f1b8873c152d182c3819a7ccc3aff16fc3037a5fc"
       },
+      "../src/sections/dto/section.dto.ts": {
+        "version": "b8ffcf96a05c7f82081872ac1ac6a5d16453b5a69228143ef7586cfe17afb49f",
+        "signature": "5e30902eaad60a2787b15de7584c889ba78849177f1cb68d1566ca8cb8aa8c7a"
+      },
+      "../src/sections/interfaces/section.interface.ts": {
+        "version": "ebd9c5d95743e0bc7d1afdb6145bfa36793633cca43d7f51c1e4f08b19230ec1",
+        "signature": "926ff6fb9294869cfc6f2435280c7b0f656b05b0d781cd530891219de1388008"
+      },
+      "../src/sections/sections.service.ts": {
+        "version": "3ccc441847297716f1b798a3e7220fa1ac75d1554f2e3fc06ca2cfb10f26302c",
+        "signature": "0dae897575d6887fec4a63ca37d37d020630dd3511940725c2a8d7fabd32c84b"
+      },
+      "../src/sections/sections.controller.ts": {
+        "version": "a108dd31ad4f2c0e2cd1b4f2a4a1a9140117b214fee798d7948b90db033f1d8c",
+        "signature": "56dfd52f8a3293843d4a6106c83cda7155183e02bdbc265e4aa3a749451c7447"
+      },
+      "../src/sections/schemas/section.schema.ts": {
+        "version": "0b824c08a5531afb4da30d201ebd44fc9e3920161273e84a85c3ac87cb35ab7f",
+        "signature": "b5f4a9d4475be84ddb1eed541e45b6dd141413b25eb8a8e8e73ace07e0a689d6"
+      },
+      "../src/sections/sections.module.ts": {
+        "version": "f23a2fa501a4b948d1aa148c2068538250ed470bd65dbd73bd9c35250c3d848a",
+        "signature": "c84152592ff43b9006de6e301399d1152e5511bd92608598be4871cf09ddb39c"
+      },
+      "../src/modules/interfaces/module.interface.ts": {
+        "version": "e75de61f7b2c4acd870b61c29f7c3b39bcc1490e095ee52628455482650b4919",
+        "signature": "049494202a9d1bfe97ffb2131ff57cd26aa4c1555060551b646b997ca956739a"
+      },
+      "../src/modules/modules.service.ts": {
+        "version": "53191019babebaafec2fea00a95e3af75f662174a64df21134f32f2794862cb1",
+        "signature": "e2698a22ede017d05415b814f97d26e3e8f329555968406dc48e96b7a04b1ee9"
+      },
+      "../src/modules/modules.controller.ts": {
+        "version": "5208a109255da3548410c57c0f0127ebd2a07c1f67f00e4cf9d3ff33e1924c3d",
+        "signature": "8f615faf6d6314337f9f880ef5b525d1500a41f09d8c748e0d8fbb020195b6e3"
+      },
+      "../src/modules/schemas/module.schema.ts": {
+        "version": "5524fbc3cdf2787564e15add45b710616edfe2f17bcae4b50db7612844b1072b",
+        "signature": "96e5717f92ad092b990b42a8e916cc5c705ba686e5751616d13700e67ae1d02e"
+      },
+      "../src/modules/modules.module.ts": {
+        "version": "a9c649e4c9b14024014f97d2eb45493c018dbe62cc9f2d5522d5cd57560c6ad7",
+        "signature": "51f83f5fe6c6b91982753b3638d7a32bffb432038d4b45a1ec417e92b64d1f16"
+      },
+      "../src/stories/dto/stories.dto.ts": {
+        "version": "c0f596fe5daacacdd35a7a1c6071c422b02a094b39fa061c3040522bd4f68041",
+        "signature": "f03c20e5a4da89d2e1e513b18fd84c2b19e13133879dbfa4f186cbb36c2f1436"
+      },
+      "../src/stories/interfaces/stories.interface.ts": {
+        "version": "d653b10c180fb47e0b9b4d8168e4966afa5b6e213243f2724a0e1909c2e15088",
+        "signature": "43a9ef882ab880c0f6578774011c19816918785c2b8f4eafad6ae8df775bda55"
+      },
+      "../src/utils/file-json.utils.ts": {
+        "version": "57047103b87443a15e4bd9f0ec8d5eb76ec1de525c9bbc797b32a77689e6d1f9",
+        "signature": "9090ae35c232d6238396bc129a6bdd1071f9bbd08c91a1b24df995867fbf60ad"
+      },
+      "../src/stories/stories.service.ts": {
+        "version": "460b037bceb0e0e3397a1cd0129da7594cfdcb664d05b4663075b71ba603b723",
+        "signature": "87ab31c0e2eaa6facb255132ef7c883970242cb01000a3ea9c0644da4b0382bf"
+      },
+      "../src/stories/stories.controller.ts": {
+        "version": "673b827e188e3a5a527f240261b69a2feafcec8061f014c6ec65d5e48f96b216",
+        "signature": "a85aaf14f6ac3e2b09ecdabf396f697c1ac2d29f16d0bb0c018da2051316c03b"
+      },
+      "../src/stories/schemas/stories.schema.ts": {
+        "version": "422abf80e19d42b7c0831caab14dea957a20939b8386464cd1e768ba7a676808",
+        "signature": "541ac781008ed33e87e6298495860ba4328dfe373f007dda31e0b9fe311b4ca1"
+      },
+      "../src/stories/stories.module.ts": {
+        "version": "f815028b1c91ba07b6dfed5125ce492ef92b4e1d5b438643fb3a5be4bd01267e",
+        "signature": "aeff37adc185759b787b5070401bc71790f16c06c4d21435626058a33990768f"
+      },
       "../src/app.module.ts": {
-        "version": "d27eb8f951cd430dbb0d0282d8152616ddc5591bfee4debc9c66dab95e980317",
+        "version": "b866a06415dd3863b4c2dabec52ceb16259d6ac271042c8fd7bccc62d11c9b47",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "../node_modules/@nestjs/core/adapters/index.d.ts": {
@@ -2262,7 +2486,7 @@
         "signature": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe"
       },
       "../src/interceptors/interceptor.ts": {
-        "version": "83c3eb4aadca3f9e80392b289481a8ef8a6517ee39e101e5ed17492688c909e8",
+        "version": "2e7d31e4eb9fd1e36f15b27c70b7ade0af71fecb38f2d838d026057f33e2c489",
         "signature": "b87253830439a552f28f64d395087997bc0dd6dc25e942c4d01c935db87ce055"
       },
       "../src/exceptions/http-exception.filter.ts": {
@@ -2313,9 +2537,9 @@
         "version": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
         "signature": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee"
       },
-      "../node_modules/@types/hapi__joi/index.d.ts": {
-        "version": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5",
-        "signature": "43e8219dd154a0e8980bc877cd1d925942d610501a63e0107c3430f59bc53ce5"
+      "../node_modules/@types/http-proxy/index.d.ts": {
+        "version": "c1d5cc0286eef54f6246a972ec1720efbba6b7b0a53a303e1f2067ca229ecd16",
+        "signature": "c1d5cc0286eef54f6246a972ec1720efbba6b7b0a53a303e1f2067ca229ecd16"
       },
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts": {
         "version": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd",
@@ -6390,12 +6614,20 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/utils/file-upload.utils.ts": [
+        "../node_modules/@types/node/path.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/items/items.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/items/dto/create-item.dto.ts",
         "../src/items/items.service.ts",
         "../src/items/interfaces/item.interface.ts",
         "../node_modules/@nestjs/platform-express/index.d.ts",
+        "../src/utils/file-upload.utils.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6433,8 +6665,302 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/files/files.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/files/files.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/files/files.service.ts",
+        "../node_modules/@nestjs/platform-express/index.d.ts",
+        "../src/utils/file-upload.utils.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/files/files.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/files/files.controller.ts",
+        "../src/files/files.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/dto/create-cover.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/interfaces/cover.interface.ts": [
+        "../node_modules/@babel/types/lib/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/covers.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/covers/interfaces/cover.interface.ts",
+        "../node_modules/rxjs/operators/index.d.ts",
+        "../node_modules/@google-cloud/storage/build/src/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/covers.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/covers/dto/create-cover.dto.ts",
+        "../src/covers/covers.service.ts",
+        "../src/covers/interfaces/cover.interface.ts",
+        "../node_modules/@nestjs/platform-express/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/schemas/cover.schema.ts": [
+        "../node_modules/@types/uuid/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/covers/covers.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/covers/covers.controller.ts",
+        "../src/covers/covers.service.ts",
+        "../src/covers/schemas/cover.schema.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/expose-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/exclude-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/transform-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/type-discriminator-descriptor.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/type-options.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/decorator-options/type-discriminator-descriptor.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/exclude-metadata.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/expose-metadata.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/enums/transformation-type.enum.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/enums/index.d.ts": [
+        "../node_modules/class-transformer/types/enums/transformation-type.enum.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/target-map.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/class-transformer-options.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/target-map.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/transform-fn-params.interface.d.ts": [
+        "../node_modules/class-transformer/types/enums/index.d.ts",
+        "../node_modules/class-transformer/types/interfaces/class-transformer-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/transform-metadata.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/transform-fn-params.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/type-metadata.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/class-constructor.type.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/type-help-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/index.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/decorator-options/expose-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/decorator-options/exclude-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/decorator-options/transform-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/decorator-options/type-discriminator-descriptor.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/decorator-options/type-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/exclude-metadata.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/expose-metadata.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/transform-metadata.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/transform-fn-params.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/type-metadata.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/class-constructor.type.d.ts",
+        "../node_modules/class-transformer/types/interfaces/class-transformer-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/target-map.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/type-help-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/classtransformer.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/exclude.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/expose.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/transform-instance-to-instance.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/transform-instance-to-plain.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/transform-plain-to-instance.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/transform.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/type.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/index.d.ts": [
+        "../node_modules/class-transformer/types/decorators/exclude.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/expose.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/transform-instance-to-instance.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/transform-instance-to-plain.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/transform-plain-to-instance.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/transform.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/type.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/index.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/class-transformer/types/classtransformer.d.ts",
+        "../node_modules/class-transformer/types/decorators/index.d.ts",
+        "../node_modules/class-transformer/types/enums/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/users/interfaces/user.interface.ts": [
         "../node_modules/@babel/types/lib/index.d.ts",
+        "../node_modules/class-transformer/types/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/hapi__joi/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6444,6 +6970,8 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
         "../src/users/interfaces/user.interface.ts",
+        "../src/auth/auth.service.ts",
+        "../node_modules/@types/hapi__joi/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6709,6 +7237,7 @@
       "../src/users/dto/user.dto.ts": [
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/class-validator/index.d.ts",
+        "../node_modules/class-transformer/types/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6767,14 +7296,178 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/sections/dto/section.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/sections/interfaces/section.interface.ts": [
+        "../node_modules/@babel/types/lib/index.d.ts",
+        "../node_modules/class-transformer/types/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/sections/sections.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/sections/interfaces/section.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/sections/sections.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../src/sections/dto/section.dto.ts",
+        "../src/sections/sections.service.ts",
+        "../src/sections/interfaces/section.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/sections/schemas/section.schema.ts": [
+        "../node_modules/@types/uuid/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/sections/sections.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/sections/sections.controller.ts",
+        "../src/sections/sections.service.ts",
+        "../src/sections/schemas/section.schema.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/modules/interfaces/module.interface.ts": [
+        "../node_modules/@babel/types/lib/index.d.ts",
+        "../node_modules/class-transformer/types/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/modules/modules.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/modules/interfaces/module.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/modules/modules.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../src/modules/modules.service.ts",
+        "../src/modules/interfaces/module.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/modules/schemas/module.schema.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/modules/modules.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/modules/modules.controller.ts",
+        "../src/modules/modules.service.ts",
+        "../src/modules/schemas/module.schema.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/stories/dto/stories.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/class-transformer/types/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/stories/interfaces/stories.interface.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/utils/file-json.utils.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/stories/stories.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/stories/interfaces/stories.interface.ts",
+        "../src/utils/file-json.utils.ts",
+        "../src/covers/covers.module.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/stories/stories.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../src/stories/dto/stories.dto.ts",
+        "../src/stories/stories.service.ts",
+        "../src/stories/interfaces/stories.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/stories/schemas/stories.schema.ts": [
+        "../node_modules/@types/uuid/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/stories/stories.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/stories/stories.controller.ts",
+        "../src/stories/stories.service.ts",
+        "../src/stories/schemas/stories.schema.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
         "../src/items/items.module.ts",
+        "../src/files/files.module.ts",
+        "../src/covers/covers.module.ts",
         "../src/auth/auth.module.ts",
         "../src/users/users.module.ts",
+        "../src/sections/sections.module.ts",
+        "../src/modules/modules.module.ts",
+        "../src/stories/stories.module.ts",
         "../src/config/keys.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -7149,7 +7842,14 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/hapi__joi/index.d.ts": [
+      "../node_modules/@types/http-proxy/index.d.ts": [
+        "../node_modules/@types/node/net.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/https.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/url.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -11264,6 +11964,23 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/files/files.controller.ts": [
+        "../src/files/files.service.ts"
+      ],
+      "../src/covers/covers.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/covers/interfaces/cover.interface.ts"
+      ],
+      "../src/covers/covers.controller.ts": [
+        "../src/covers/covers.service.ts",
+        "../src/covers/interfaces/cover.interface.ts"
+      ],
+      "../node_modules/@types/hapi__joi/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/users/users.service.ts": [
         "../src/users/interfaces/user.interface.ts"
       ],
@@ -11507,6 +12224,29 @@
       ],
       "../src/auth/auth.controller.ts": [
         "../src/auth/auth.service.ts"
+      ],
+      "../src/sections/sections.service.ts": [
+        "../src/sections/interfaces/section.interface.ts"
+      ],
+      "../src/sections/sections.controller.ts": [
+        "../src/sections/sections.service.ts",
+        "../src/sections/interfaces/section.interface.ts",
+        "../src/sections/dto/section.dto.ts"
+      ],
+      "../src/modules/modules.service.ts": [
+        "../src/modules/interfaces/module.interface.ts"
+      ],
+      "../src/modules/modules.controller.ts": [
+        "../src/modules/modules.service.ts",
+        "../src/modules/interfaces/module.interface.ts"
+      ],
+      "../src/stories/stories.service.ts": [
+        "../src/stories/interfaces/stories.interface.ts"
+      ],
+      "../src/stories/stories.controller.ts": [
+        "../src/stories/stories.service.ts",
+        "../src/stories/interfaces/stories.interface.ts",
+        "../src/stories/dto/stories.dto.ts"
       ],
       "../node_modules/@nestjs/core/adapters/index.d.ts": [
         "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -11854,12 +12594,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/hapi__joi/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -12003,6 +12737,225 @@
       ],
       "../node_modules/@types/yargs/index.d.ts": [
         "../node_modules/@types/yargs-parser/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/expose-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/index.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/decorator-options/expose-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/decorator-options/exclude-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/decorator-options/transform-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/decorator-options/type-discriminator-descriptor.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/decorator-options/type-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/exclude-metadata.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/expose-metadata.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/transform-metadata.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/transform-fn-params.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/type-metadata.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/class-constructor.type.d.ts",
+        "../node_modules/class-transformer/types/interfaces/class-transformer-options.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/target-map.interface.d.ts",
+        "../node_modules/class-transformer/types/interfaces/type-help-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/index.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/class-transformer/types/classtransformer.d.ts",
+        "../node_modules/class-transformer/types/decorators/index.d.ts",
+        "../node_modules/class-transformer/types/enums/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/type.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/index.d.ts": [
+        "../node_modules/class-transformer/types/decorators/exclude.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/expose.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/transform-instance-to-instance.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/transform-instance-to-plain.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/transform-plain-to-instance.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/transform.decorator.d.ts",
+        "../node_modules/class-transformer/types/decorators/type.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/transform.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/transform-plain-to-instance.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/transform-instance-to-plain.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/transform-instance-to-instance.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/expose.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/decorators/exclude.decorator.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/classtransformer.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/type-metadata.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/transform-metadata.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/class-transformer/types/interfaces/metadata/transform-fn-params.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/expose-metadata.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/exclude-metadata.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/type-discriminator-descriptor.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/type-options.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/decorator-options/type-discriminator-descriptor.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/exclude-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/decorator-options/transform-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/enums/transformation-type.enum.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/enums/index.d.ts": [
+        "../node_modules/class-transformer/types/enums/transformation-type.enum.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/metadata/transform-fn-params.interface.d.ts": [
+        "../node_modules/class-transformer/types/enums/index.d.ts",
+        "../node_modules/class-transformer/types/interfaces/class-transformer-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/target-map.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/class-transformer-options.interface.d.ts": [
+        "../node_modules/class-transformer/types/interfaces/target-map.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/class-constructor.type.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/types/interfaces/type-help-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/http-proxy/index.d.ts": [
+        "../node_modules/@types/node/net.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/https.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/url.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -12499,13 +13452,22 @@
       "../node_modules/@nestjs/platform-express/multer/multer.module.d.ts",
       "../node_modules/@nestjs/platform-express/multer/index.d.ts",
       "../node_modules/@nestjs/platform-express/index.d.ts",
+      "../src/utils/file-upload.utils.ts",
       "../src/items/items.controller.ts",
       "../node_modules/@types/uuid/interfaces.d.ts",
       "../node_modules/@types/uuid/index.d.ts",
       "../src/items/schemas/item.schema.ts",
       "../src/items/items.module.ts",
-      "../src/users/interfaces/user.interface.ts",
-      "../src/users/users.service.ts",
+      "../src/files/files.service.ts",
+      "../src/files/files.controller.ts",
+      "../src/files/files.module.ts",
+      "../src/covers/dto/create-cover.dto.ts",
+      "../src/covers/interfaces/cover.interface.ts",
+      "../src/covers/covers.service.ts",
+      "../src/covers/covers.controller.ts",
+      "../src/covers/schemas/cover.schema.ts",
+      "../src/covers/covers.module.ts",
+      "../node_modules/@types/hapi__joi/index.d.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts",
       "../node_modules/@nestjs/jwt/dist/interfaces/index.d.ts",
@@ -12513,7 +13475,6 @@
       "../node_modules/@nestjs/jwt/dist/jwt.service.d.ts",
       "../node_modules/@nestjs/jwt/dist/index.d.ts",
       "../node_modules/@nestjs/jwt/index.d.ts",
-      "../src/auth/auth.service.ts",
       "../node_modules/@types/range-parser/index.d.ts",
       "../node_modules/@types/express-serve-static-core/index.d.ts",
       "../node_modules/@types/mime/index.d.ts",
@@ -12534,16 +13495,16 @@
       "../node_modules/@nestjs/passport/dist/passport/passport.strategy.d.ts",
       "../node_modules/@nestjs/passport/dist/index.d.ts",
       "../node_modules/@nestjs/passport/index.d.ts",
-      "../src/auth/local.strategy.ts",
       "../node_modules/@types/passport-jwt/index.d.ts",
       "../src/config/keys.ts",
-      "../src/users/dto/user.dto.ts",
-      "../src/users/users.controller.ts",
       "../src/users/schemas/user.schema.ts",
-      "../src/users/users.module.ts",
-      "../src/auth/auth.controller.ts",
-      "../src/auth/auth.module.ts",
-      "../src/app.module.ts",
+      "../src/sections/dto/section.dto.ts",
+      "../src/sections/schemas/section.schema.ts",
+      "../src/modules/schemas/module.schema.ts",
+      "../src/stories/interfaces/stories.interface.ts",
+      "../src/utils/file-json.utils.ts",
+      "../src/stories/stories.service.ts",
+      "../src/stories/schemas/stories.schema.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
       "../node_modules/@nestjs/core/application-config.d.ts",
@@ -12587,7 +13548,6 @@
       "../node_modules/@types/cookiejar/index.d.ts",
       "../node_modules/@types/minimatch/index.d.ts",
       "../node_modules/@types/glob/index.d.ts",
-      "../node_modules/@types/hapi__joi/index.d.ts",
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts",
       "../node_modules/@types/istanbul-lib-report/index.d.ts",
       "../node_modules/@types/istanbul-reports/index.d.ts",
@@ -12608,8 +13568,7 @@
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
-      "../node_modules/@types/yargs/index.d.ts",
-      "../src/auth/jwt.strategy.ts"
+      "../node_modules/@types/yargs/index.d.ts"
     ]
   },
   "version": "3.7.2"

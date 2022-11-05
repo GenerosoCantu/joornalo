@@ -1,18 +1,26 @@
-export interface User {
+export declare class User {
     id?: string;
-    username: string;
-    name: string;
-    password: string;
+    email: string;
+    role: string;
+    firstName: string;
+    lastName: string;
+    phone: string;
     reg_time: Date;
     login_fail: number;
     locked: boolean;
-    admin: boolean;
+    verified: boolean;
+    status: string;
+    sections: string[];
+    modules: string[];
+    password: string;
 }
 export interface UserProfile {
     id?: string;
-    username: string;
-    name: string;
-    admin: boolean;
+    email: string;
+    firstName: string;
+    lastName: string;
+    role: string;
+    status: string;
 }
 export interface Permissions {
     permissions: string[];

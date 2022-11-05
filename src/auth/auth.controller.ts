@@ -5,14 +5,14 @@ import { AuthService } from '../auth/auth.service';
 // import { ItemsService } from './items.service';
 // import { Item } from './interfaces/item.interface';
 
-@Controller('auth')
+@Controller('login')
 export class AuthController {
   constructor(
     private readonly authService: AuthService,
   ) { }
 
   @UseGuards(AuthGuard('local'))
-  @Post('login')
+  @Post()
   async login(@Request() req) {
     return this.authService.login(req.user);
   }

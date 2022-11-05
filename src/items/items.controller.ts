@@ -4,7 +4,8 @@ import { ItemsService } from './items.service';
 import { Item } from './interfaces/item.interface';
 import { ValidationPipe, ParseUUIDPipe, UploadedFile, UseInterceptors, UploadedFiles } from '@nestjs/common';
 import { FileInterceptor, FilesInterceptor } from '@nestjs/platform-express';
-
+import { editFileName, imageFileFilter } from '../utils/file-upload.utils';
+import { diskStorage } from 'multer';
 
 @Controller('items')
 export class ItemsController {
@@ -42,10 +43,32 @@ export class ItemsController {
     return this.itemsService.update(id, updateItemDto);
   }
 
-  @Post('upload')
-  @UseInterceptors(FilesInterceptor('file', 1, { dest: './data/tmp' }))
-  async uploadFile(@UploadedFiles() file) {
+  @Post('uploadx')
+  @UseInterceptors(
+    FilesInterceptor('file', 1, { dest: './data/tmp' }))
+  async uploadFile(@UploadedFiles() file, @Body() body) {
+    console.log(body.name);
+    console.log('file----', file);
     return this.itemsService.uploadFile(file);
+  }
+
+  @Post('upload')
+  @UseInterceptors(
+    FileInterceptor('file', {
+      storage: diskStorage({
+        destination: './data/tmp',
+        // filename: editFileName,
+      }),
+      fileFilter: imageFileFilter,
+    }),
+  )
+  async uploadedFile(@UploadedFile() file) {
+    console.log(file);
+    const response = {
+      originalname: file.originalname,
+      filename: file.filename,
+    };
+    return response;
   }
 
 }
